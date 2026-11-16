@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="A young plant sprouting from a pot with a plus badge">
+  <rect width="480" height="360" rx="28" fill="#eef3e7"/>
+  <circle cx="240" cy="162" r="118" fill="#dfe9cf"/>
+  <ellipse cx="240" cy="312" rx="136" ry="14" fill="#d8e2cc"/>
+  <path d="M240 288V176" stroke="#4f7a4c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M240 236c-26-6-44-24-50-48" stroke="#4f7a4c" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M240 226c28-6 46-24 52-48" stroke="#4f7a4c" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g fill="#55875a">
+    <ellipse cx="192" cy="168" rx="24" ry="54" transform="rotate(-34 192 168)"/>
+    <ellipse cx="288" cy="168" rx="24" ry="54" transform="rotate(34 288 168)" fill="#6b9560"/>
+    <ellipse cx="240" cy="154" rx="24" ry="58"/>
+  </g>
+  <ellipse cx="240" cy="288" rx="48" ry="10" fill="#b9a184"/>
+  <path d="M194 286h92l-13 52q-33 11-66 0z" fill="#c9b59a"/>
+  <path d="M192 284q48 13 96 0v13q-48 13-96 0z" fill="#ad987d"/>
+  <circle cx="350" cy="100" r="40" fill="#315b3d"/>
+  <path d="M350 84v32M334 100h32" stroke="#d7e8a0" stroke-width="7" stroke-linecap="round"/>
+</svg>

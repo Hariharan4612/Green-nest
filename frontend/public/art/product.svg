@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Close-up of a monstera plant with a price tag">
+  <rect width="480" height="360" rx="28" fill="#eef3e7"/>
+  <circle cx="220" cy="156" r="122" fill="#dfe9cf"/>
+  <ellipse cx="226" cy="312" rx="128" ry="14" fill="#d8e2cc"/>
+  <path d="M226 296V150" stroke="#4f7a4c" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#55875a">
+    <ellipse cx="168" cy="132" rx="38" ry="82" transform="rotate(-28 168 132)"/>
+    <ellipse cx="286" cy="130" rx="38" ry="82" transform="rotate(28 286 130)"/>
+    <ellipse cx="118" cy="196" rx="34" ry="72" transform="rotate(-50 118 196)"/>
+    <ellipse cx="334" cy="196" rx="34" ry="72" transform="rotate(50 334 196)"/>
+    <ellipse cx="226" cy="158" rx="36" ry="78"/>
+  </g>
+  <g fill="#6b9560">
+    <ellipse cx="188" cy="176" rx="24" ry="58" transform="rotate(-16 188 176)"/>
+    <ellipse cx="264" cy="176" rx="24" ry="58" transform="rotate(16 264 176)"/>
+  </g>
+  <ellipse cx="226" cy="296" rx="58" ry="10" fill="#b9a184"/>
+  <path d="M168 294h116l-17 56q-41 13-82 0z" fill="#c9b59a"/>
+  <path d="M166 292q60 15 120 0v14q-60 15-120 0z" fill="#ad987d"/>
+  <g transform="rotate(8 372 122)">
+    <rect x="330" y="96" width="92" height="52" rx="12" fill="#315b3d"/>
+    <circle cx="346" cy="112" r="5" fill="#d7e8a0"/>
+    <text x="382" y="131" text-anchor="middle" font-family="Georgia, serif" font-size="21" fill="#d7e8a0">$28</text>
+  </g>
+</svg>

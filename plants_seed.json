@@ -1,0 +1,2810 @@
+[
+  {
+    "id": 1,
+    "slug": "monstera-deliciosa",
+    "name": "Monstera Deliciosa",
+    "scientificName": "Monstera deliciosa",
+    "category": "Indoor Plants",
+    "price": 24.99,
+    "originalPrice": 34.99,
+    "discount": "29% OFF",
+    "rating": 4.8,
+    "reviewCount": 1240,
+    "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Bestseller",
+    "badge": "Bestseller",
+    "description": "A beautiful air-purifying plant that adds a tropical touch to your home with iconic perforated leaves.",
+    "features": [
+      "Air Purifying",
+      "Low Maintenance",
+      "Indoor Friendly"
+    ],
+    "highlights": [
+      "Fresh & Healthy Plant direct from nursery",
+      "Comes with step-by-step Care Guide",
+      "Secure, 100% recyclable packaging"
+    ],
+    "care": {
+      "sunlight": "Bright, indirect light",
+      "water": "Water when top 2 inches feel dry (approx. every 7-10 days)",
+      "humidity": "Medium to high humidity (50-60%)",
+      "temperature": "65°F - 85°F (18°C - 29°C)",
+      "soil": "Rich, well-draining peat-based potting mix",
+      "fertilizer": "Balanced liquid fertilizer once a month in spring & summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow top 2-3 inches of soil to dry out between waterings. Reduce frequency in winter."
+      },
+      {
+        "type": "sunlight",
+        "description": "Thrives in bright, indirect light. Direct harsh sun will scorch the leaves."
+      },
+      {
+        "type": "humidity",
+        "description": "Appreciates moderate to high humidity. Mist periodically or place near humidifier."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Mildly toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 2,
+    "slug": "snake-plant",
+    "name": "Snake Plant",
+    "scientificName": "Sansevieria trifasciata",
+    "category": "Indoor Plants",
+    "price": 19.99,
+    "originalPrice": 24.99,
+    "discount": "20% OFF",
+    "rating": 4.9,
+    "reviewCount": 890,
+    "image": "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Low Maintenance",
+    "badge": "Farm favorite",
+    "description": "Known for releasing oxygen at night and surviving virtually anywhere with minimal care.",
+    "features": [
+      "Air Purifying",
+      "Hardy & Resilient",
+      "Low Light Tolerant"
+    ],
+    "highlights": [
+      "Super resilient, indestructible indoor plant",
+      "NASA-approved top air purifying specimen",
+      "Thrives on benign neglect"
+    ],
+    "care": {
+      "sunlight": "Low to bright indirect light",
+      "water": "Every 2-3 weeks; allow soil to dry completely",
+      "humidity": "Any household humidity",
+      "temperature": "60°F - 85°F",
+      "soil": "Cactus or succulent gritty soil blend",
+      "fertilizer": "Mild cactus fertilizer once in early summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water sparingly. Allow the soil to dry out completely between waterings to prevent root rot."
+      },
+      {
+        "type": "sunlight",
+        "description": "Extremely tolerant of all light levels from low shaded corners to bright filtered windows."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Low light",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Mildly toxic if ingested",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 3,
+    "slug": "peace-lily",
+    "name": "Peace Lily",
+    "scientificName": "Spathiphyllum wallisii",
+    "category": "Flowering Plants",
+    "price": 22.99,
+    "originalPrice": 28.99,
+    "discount": "18% OFF",
+    "rating": 4.7,
+    "reviewCount": 654,
+    "image": "https://images.unsplash.com/photo-1593691509543-c55fb32e7355?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1593691509543-c55fb32e7355?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Air Purifying",
+    "badge": "Popular",
+    "description": "Graceful white blooms and glossy green leaves that tell you when they need water.",
+    "features": [
+      "Air Purifying",
+      "Flowering",
+      "Shade Loving"
+    ],
+    "highlights": [
+      "Produces serene white flowers",
+      "Removes harmful household toxins",
+      "Expressive leaves droop slightly when thirsty"
+    ],
+    "care": {
+      "sunlight": "Medium to low indirect light",
+      "water": "Keep soil moist but not soggy",
+      "humidity": "Prefers higher humidity (50%+)",
+      "temperature": "65°F - 80°F",
+      "soil": "Rich, moisture-retentive organic mix",
+      "fertilizer": "Diluted balanced houseplant fertilizer every 6 weeks"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Keep soil consistently moist but never soggy. The leaves gently droop when thirsty."
+      },
+      {
+        "type": "sunlight",
+        "description": "Prefers medium to low indirect sunlight. Avoid direct afternoon light."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 4,
+    "slug": "rubber-plant",
+    "name": "Rubber Plant",
+    "scientificName": "Ficus elastica",
+    "category": "Indoor Plants",
+    "price": 29.99,
+    "originalPrice": 38,
+    "discount": "21% OFF",
+    "rating": 4.8,
+    "reviewCount": 520,
+    "image": "https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Bold Statement",
+    "badge": "Statement",
+    "description": "Striking thick, glossy dark burgundy leaves that give modern sophistication to any space.",
+    "features": [
+      "Statement Plant",
+      "Fast Growing",
+      "Air Cleansing"
+    ],
+    "highlights": [
+      "Dramatic broad burgundy foliage",
+      "Thrives in modern bright interiors",
+      "Excellent natural air cleanser"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light",
+      "water": "Water when top 1-2 inches are dry",
+      "humidity": "Moderate humidity",
+      "temperature": "60°F - 78°F",
+      "soil": "Fast-draining aerated indoor potting soil",
+      "fertilizer": "Feed once a month in active spring/summer growth"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water during growing season when topsoil dries. Wipe leaves with damp cloth to remove dust."
+      },
+      {
+        "type": "sunlight",
+        "description": "Thrives in plenty of bright indirect light."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Large",
+    "potSize": "8 inch",
+    "toxicity": "Mildly toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 5,
+    "slug": "areca-palm",
+    "name": "Areca Palm",
+    "scientificName": "Dypsis lutescens",
+    "category": "Indoor Plants",
+    "price": 19.99,
+    "originalPrice": 26,
+    "discount": "23% OFF",
+    "rating": 4.6,
+    "reviewCount": 430,
+    "image": "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Pet Friendly",
+    "description": "Lush feathery fronds that bring a calm tropical resort vibe right to your living room.",
+    "features": [
+      "Pet Friendly",
+      "Natural Humidifier",
+      "Tropical Vibe"
+    ],
+    "highlights": [
+      "100% non-toxic and pet friendly",
+      "Natural humidifying green foliage",
+      "Graceful architectural canopy"
+    ],
+    "care": {
+      "sunlight": "Bright filtered sunlight",
+      "water": "Water regularly, let surface dry slightly",
+      "humidity": "Loves high humidity (55%+)",
+      "temperature": "65°F - 75°F",
+      "soil": "Rich loam with good drainage",
+      "fertilizer": "Standard palm fertilizer every two months"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Keep soil lightly moist during spring and summer. Avoid letting roots sit in standing water."
+      },
+      {
+        "type": "sunlight",
+        "description": "Prefers bright, filtered light. Direct sun can burn delicate frond tips."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Large",
+    "potSize": "8 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 6,
+    "slug": "monstera-adansonii",
+    "name": "Monstera Adansonii",
+    "scientificName": "Monstera adansonii",
+    "category": "Indoor Plants",
+    "price": 27.99,
+    "originalPrice": 35,
+    "discount": "20% OFF",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "image": "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Rare Find",
+    "badge": "Collector",
+    "description": "Also known as the Swiss Cheese Vine, famous for dramatic holes covering each heart-shaped leaf.",
+    "features": [
+      "Trailing Vine",
+      "Unique Leaf Pattern",
+      "Fast Climbing"
+    ],
+    "highlights": [
+      "Intricate natural leaf cutouts",
+      "Can cascade or climb a moss pole",
+      "Loved by plant collectors"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light",
+      "water": "Water once a week when top soil dries",
+      "humidity": "High humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Chunky aroid soil mix",
+      "fertilizer": "Monthly during growing season"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water once top inch dries. Do not overwater or leave in soggy soil."
+      },
+      {
+        "type": "sunlight",
+        "description": "Bright indirect light keeps fenestrations large and healthy."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 7,
+    "slug": "mini-monstera",
+    "name": "Mini Monstera",
+    "scientificName": "Rhaphidophora tetrasperma",
+    "category": "Indoor Plants",
+    "price": 21.99,
+    "originalPrice": 29,
+    "discount": "24% OFF",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "image": "https://images.unsplash.com/photo-1604762524889-3e2fccbc2568?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1604762524889-3e2fccbc2568?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Compact Size",
+    "badge": "Trending",
+    "description": "Offers the iconic fenestrations of a monstera in a compact, fast-growing climbing vine.",
+    "features": [
+      "Compact Space",
+      "Fast Growing",
+      "Modern Decor"
+    ],
+    "highlights": [
+      "Compact footprint for desks and shelves",
+      "Fast vigorous growth season",
+      "Vibrant emerald green leaves"
+    ],
+    "care": {
+      "sunlight": "Bright indirect sunlight",
+      "water": "Moderate watering",
+      "humidity": "Medium to high",
+      "temperature": "68°F - 80°F",
+      "soil": "Aerated organic mix",
+      "fertilizer": "Diluted liquid fertilizer every 3 weeks"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow top half of soil to dry before watering thoroughly."
+      },
+      {
+        "type": "sunlight",
+        "description": "Bright indirect light for fastest leaf growth."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "5 inch",
+    "toxicity": "Mildly toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 8,
+    "slug": "fiddle-leaf-fig",
+    "name": "Fiddle Leaf Fig",
+    "scientificName": "Ficus lyrata",
+    "category": "Indoor Plants",
+    "price": 34.99,
+    "originalPrice": 45,
+    "discount": "22% OFF",
+    "rating": 4.7,
+    "reviewCount": 710,
+    "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1597055181300-e3633a917c9c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Designer Choice",
+    "badge": "Statement",
+    "description": "The iconic interior design tree with broad violin-shaped leaves and tall stately stature.",
+    "features": [
+      "Floor Plant",
+      "Statement Design",
+      "Sculptural"
+    ],
+    "highlights": [
+      "Designer favorite for living spaces",
+      "Magnificent broad violin foliage",
+      "Includes premium nursery grower pot"
+    ],
+    "care": {
+      "sunlight": "Consistent bright indirect light",
+      "water": "Water when top 2 inches dry",
+      "humidity": "Moderate humidity",
+      "temperature": "65°F - 75°F",
+      "soil": "Rich, fast-draining potting soil",
+      "fertilizer": "High nitrogen fertilizer once a month"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water thoroughly once top 2 inches feel dry. Ensure excess drains away."
+      },
+      {
+        "type": "sunlight",
+        "description": "Requires consistent bright, filtered light. Rotate weekly."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Moderate",
+    "size": "Large",
+    "potSize": "10 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 9,
+    "slug": "golden-pothos",
+    "name": "Golden Pothos",
+    "scientificName": "Epipremnum aureum",
+    "category": "Indoor Plants",
+    "price": 16.99,
+    "originalPrice": 22,
+    "discount": "23% OFF",
+    "rating": 4.9,
+    "reviewCount": 920,
+    "image": "https://images.unsplash.com/photo-1596724817791-9040a54e14b0?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1596724817791-9040a54e14b0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Beginner Friendly",
+    "badge": "Easy care",
+    "description": "Cascading golden-marbled vines that forgive missed waterings and brighten any bookshelf.",
+    "features": [
+      "Beginner Friendly",
+      "Trailing Foliage",
+      "Air Cleansing"
+    ],
+    "highlights": [
+      "Nearly unkillable beginner plant",
+      "Lush variegated green and gold vines",
+      "Quickly purifies indoor air toxins"
+    ],
+    "care": {
+      "sunlight": "Low to medium indirect light",
+      "water": "Water every 7-10 days",
+      "humidity": "Average room humidity",
+      "temperature": "65°F - 85°F",
+      "soil": "Standard potting soil",
+      "fertilizer": "Standard plant food every 2 months"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water when top 50% of potting mix is dry. Tolerates missed watering."
+      },
+      {
+        "type": "sunlight",
+        "description": "Can grow in low light; bright indirect sun keeps variegation vivid."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Low light",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 10,
+    "slug": "zz-plant",
+    "name": "ZZ Plant",
+    "scientificName": "Zamioculcas zamiifolia",
+    "category": "Indoor Plants",
+    "price": 25.99,
+    "originalPrice": 32.99,
+    "discount": "21% OFF",
+    "rating": 4.9,
+    "reviewCount": 810,
+    "image": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Low Maintenance",
+    "badge": "Indestructible",
+    "description": "Glossy, feather-like stems that store water in underground rhizomes, surviving in windowless rooms.",
+    "features": [
+      "Low Light Tolerant",
+      "Drought Resilient",
+      "Glossy Foliage"
+    ],
+    "highlights": [
+      "Flourishes even in low-light office corners",
+      "Natural glossy sheen with zero leaf polish",
+      "Needs water only once a month"
+    ],
+    "care": {
+      "sunlight": "Low to bright indirect light",
+      "water": "Water once every 3-4 weeks",
+      "humidity": "Low to average household",
+      "temperature": "60°F - 80°F",
+      "soil": "Porous, well-draining cactus blend",
+      "fertilizer": "Once in spring at half strength"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Less is more. Only water when soil is bone dry throughout pot."
+      },
+      {
+        "type": "sunlight",
+        "description": "Survives in low light, fluorescent office lighting, or bright indirect."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Low light",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 11,
+    "slug": "spider-plant",
+    "name": "Spider Plant",
+    "scientificName": "Chlorophytum comosum",
+    "category": "Indoor Plants",
+    "price": 15.99,
+    "originalPrice": 20,
+    "discount": "20% OFF",
+    "rating": 4.8,
+    "reviewCount": 640,
+    "image": "https://images.unsplash.com/photo-1572688484437-338274d75d31?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1572688484437-338274d75d31?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Pet Friendly",
+    "description": "Arching green and white striped leaves that sprout cute plantlets on long cascading stems.",
+    "features": [
+      "Pet Friendly",
+      "Air Purifying",
+      "Fast Sprouting"
+    ],
+    "highlights": [
+      "100% non-toxic for cats and dogs",
+      "Produces cascading spiderette baby plants",
+      "Removes formaldehyde and xylene from air"
+    ],
+    "care": {
+      "sunlight": "Bright indirect to moderate light",
+      "water": "Keep lightly moist; water once a week",
+      "humidity": "Moderate humidity",
+      "temperature": "65°F - 75°F",
+      "soil": "Well-aerated all-purpose potting mix",
+      "fertilizer": "Diluted fertilizer every month"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water when top 1 inch is dry. Use filtered or rainwater if tips brown."
+      },
+      {
+        "type": "sunlight",
+        "description": "Bright indirect sunlight produces the best ribbon variegation."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 12,
+    "slug": "boston-fern",
+    "name": "Boston Fern",
+    "scientificName": "Nephrolepis exaltata",
+    "category": "Ferns & Foliage",
+    "price": 21.5,
+    "originalPrice": 27,
+    "discount": "20% OFF",
+    "rating": 4.6,
+    "reviewCount": 380,
+    "image": "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Foliage",
+    "description": "Feathery cascading fronds that add graceful Victorian charm and humidify dry rooms.",
+    "features": [
+      "Pet Friendly",
+      "Humidity Loving",
+      "Hanging Basket"
+    ],
+    "highlights": [
+      "Safe for curious cats and dogs",
+      "Ideal for bathrooms and shower spaces",
+      "Fluffy lush frond texture"
+    ],
+    "care": {
+      "sunlight": "Filtered indirect light or gentle morning sun",
+      "water": "Keep consistently damp; never let dry out",
+      "humidity": "High humidity (60%+)",
+      "temperature": "60°F - 75°F",
+      "soil": "Peat-heavy rich potting blend",
+      "fertilizer": "Monthly in spring & summer at 1/4 strength"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Keep soil evenly moist. Water whenever surface feels barely dry."
+      },
+      {
+        "type": "humidity",
+        "description": "Mist daily or keep in high-humidity rooms like bathroom."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 13,
+    "slug": "calathea-orbifolia",
+    "name": "Calathea Orbifolia",
+    "scientificName": "Goeppertia orbifolia",
+    "category": "Indoor Plants",
+    "price": 32,
+    "originalPrice": 42,
+    "discount": "24% OFF",
+    "rating": 4.7,
+    "reviewCount": 290,
+    "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Artistic",
+    "description": "Enormous round leaves etched with silvery designer stripes that fold upward at night.",
+    "features": [
+      "Pet Friendly",
+      "Stunning Patterns",
+      "Prayer Movement"
+    ],
+    "highlights": [
+      "Large sculptural round leaves",
+      "Pet friendly certified",
+      "Dramatic designer foliage"
+    ],
+    "care": {
+      "sunlight": "Medium indirect shade",
+      "water": "Filtered or distilled water when top inch is dry",
+      "humidity": "High humidity (60%+)",
+      "temperature": "65°F - 80°F",
+      "soil": "Rich moisture-retentive aroid soil",
+      "fertilizer": "Light liquid fertilizer during spring"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Sensitive to tap salts. Use filtered or distilled room-temp water."
+      },
+      {
+        "type": "sunlight",
+        "description": "Avoid direct rays which will fade the silver brush strokes."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 14,
+    "slug": "string-of-pearls",
+    "name": "String of Pearls",
+    "scientificName": "Senecio rowleyanus",
+    "category": "Succulents & Cacti",
+    "price": 18.99,
+    "originalPrice": 24,
+    "discount": "21% OFF",
+    "rating": 4.5,
+    "reviewCount": 410,
+    "image": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Trailing Succulent",
+    "badge": "Collector",
+    "description": "Fascinating cascading strands of pearl-like spherical succulent leaves.",
+    "features": [
+      "Trailing Succulent",
+      "Unique Shape",
+      "Drought Hardy"
+    ],
+    "highlights": [
+      "Unusual beaded succulent foliage",
+      "Dramatic trailing plant for shelves or hangers",
+      "Stores moisture in spherical beads"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light with gentle morning sun",
+      "water": "Water thoroughly every 2 weeks; pearls shrink when thirsty",
+      "humidity": "Low to average",
+      "temperature": "70°F - 80°F",
+      "soil": "Fast-draining cactus and succulent grit",
+      "fertilizer": "Diluted succulent fertilizer twice a year"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Bottom water or water soil directly; allow beads to stay dry to avoid rot."
+      },
+      {
+        "type": "sunlight",
+        "description": "Top of pot must receive bright light for dense root health."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Moderate",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Toxic if ingested",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 15,
+    "slug": "aloe-vera",
+    "name": "Aloe Vera",
+    "scientificName": "Aloe barbadensis miller",
+    "category": "Succulents & Cacti",
+    "price": 14.99,
+    "originalPrice": 19.99,
+    "discount": "25% OFF",
+    "rating": 4.9,
+    "reviewCount": 1100,
+    "image": "https://images.unsplash.com/photo-1567689265664-1c48de61db0b?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1567689265664-1c48de61db0b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Medicinal & Hardy",
+    "badge": "Medicinal",
+    "description": "Fleshy serrated leaves filled with soothing therapeutic gel. Excellent sun-loving windowsill companion.",
+    "features": [
+      "Medicinal Gel",
+      "Drought Resilient",
+      "Air Purifying"
+    ],
+    "highlights": [
+      "Natural burn and skin soothing gel inside leaves",
+      "Requires very little attention",
+      "Purifies indoor air overnight"
+    ],
+    "care": {
+      "sunlight": "Bright direct to indirect sunlight",
+      "water": "Every 3 weeks; allow to dry completely",
+      "humidity": "Low humidity",
+      "temperature": "55°F - 85°F",
+      "soil": "Porous sandy cactus soil",
+      "fertilizer": "Spring feed once per year"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Drench thoroughly and let dry completely. Never allow water to pool in rosette center."
+      },
+      {
+        "type": "sunlight",
+        "description": "Loves bright sunny windowsills."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 16,
+    "slug": "jade-plant",
+    "name": "Jade Plant",
+    "scientificName": "Crassula ovata",
+    "category": "Succulents & Cacti",
+    "price": 19.5,
+    "originalPrice": 25,
+    "discount": "22% OFF",
+    "rating": 4.8,
+    "reviewCount": 540,
+    "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Good Luck Symbol",
+    "badge": "Prosperity",
+    "description": "Symbol of wealth and good fortune featuring fleshy jade-green leaves and tree-like miniature trunk.",
+    "features": [
+      "Bonsai-like Growth",
+      "Long-Lived",
+      "Low Water"
+    ],
+    "highlights": [
+      "Can live for decades passed through generations",
+      "Known as the Friendship Tree and Money Tree",
+      "Thrives in sunny spots"
+    ],
+    "care": {
+      "sunlight": "Full sun to bright direct light",
+      "water": "Allow soil to dry out between waterings",
+      "humidity": "Low household humidity",
+      "temperature": "65°F - 75°F",
+      "soil": "Well-draining succulent potting mix",
+      "fertilizer": "Balanced fertilizer quarterly"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water when soil is dry to the touch. Reduce water during winter dormancy."
+      },
+      {
+        "type": "sunlight",
+        "description": "At least 4-6 hours of bright light daily develops reddish leaf margins."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 17,
+    "slug": "chinese-money-plant",
+    "name": "Chinese Money Plant",
+    "scientificName": "Pilea peperomioides",
+    "category": "Indoor Plants",
+    "price": 18,
+    "originalPrice": 24,
+    "discount": "25% OFF",
+    "rating": 4.8,
+    "reviewCount": 780,
+    "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Pet Friendly",
+    "description": "Playful coin-shaped emerald leaves on dainty stems that produce lots of baby pups to share.",
+    "features": [
+      "Pet Friendly",
+      "Pass-it-on Plant",
+      "Unique Coin Leaves"
+    ],
+    "highlights": [
+      "Safe for household cats and dogs",
+      "Produces abundant pups for easy propagation",
+      "Fun conversational pancake leaves"
+    ],
+    "care": {
+      "sunlight": "Bright indirect sunlight",
+      "water": "Water once a week when top soil dries",
+      "humidity": "Average household humidity",
+      "temperature": "60°F - 75°F",
+      "soil": "Rich, aerated quick-draining soil",
+      "fertilizer": "Monthly liquid plant food in spring/summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Wait until the leaves droop slightly before giving a thorough soak."
+      },
+      {
+        "type": "sunlight",
+        "description": "Rotate weekly to keep round umbrella canopy growing evenly."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 18,
+    "slug": "bird-of-paradise",
+    "name": "Bird of Paradise",
+    "scientificName": "Strelitzia nicolai",
+    "category": "Indoor Plants",
+    "price": 49.99,
+    "originalPrice": 65,
+    "discount": "23% OFF",
+    "rating": 4.9,
+    "reviewCount": 460,
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Statement Plant",
+    "badge": "Luxury",
+    "description": "Grand tropical giant with huge banana-shaped paddle leaves that elevate spacious rooms.",
+    "features": [
+      "Statement Tree",
+      "Tropical Luxury",
+      "Fast Growing"
+    ],
+    "highlights": [
+      "Dramatic 4 to 6-foot indoor presence",
+      "Loves sunny living rooms and lofts",
+      "Natural leaf splits allow light penetration"
+    ],
+    "care": {
+      "sunlight": "Bright direct to indirect sunlight",
+      "water": "Keep soil evenly moist in summer; allow top to dry in winter",
+      "humidity": "Medium to high humidity",
+      "temperature": "65°F - 85°F",
+      "soil": "Rich loamy soil with perlite",
+      "fertilizer": "Bi-weekly during active summer growth"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water generously when top 2 inches dry out. Discard runoff."
+      },
+      {
+        "type": "sunlight",
+        "description": "Requires high light levels with some direct morning sunshine."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Large",
+    "potSize": "10 inch",
+    "toxicity": "Mildly toxic if ingested",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 19,
+    "slug": "english-ivy",
+    "name": "English Ivy",
+    "scientificName": "Hedera helix",
+    "category": "Outdoor Plants",
+    "price": 14.5,
+    "originalPrice": 18,
+    "discount": "19% OFF",
+    "rating": 4.6,
+    "reviewCount": 390,
+    "image": "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Air Purifying",
+    "badge": "Hardy",
+    "description": "Evergreen trailing climber with classical lobed foliage that purifies air and covers trellises.",
+    "features": [
+      "Fast Climbing",
+      "Air Purifying",
+      "Cold Hardy"
+    ],
+    "highlights": [
+      "Exceptional mold toxin purifier",
+      "Thrives outdoors on brick walls and indoors in baskets",
+      "Cold resilient evergreen"
+    ],
+    "care": {
+      "sunlight": "Medium light to bright shade",
+      "water": "Water when top inch feels dry",
+      "humidity": "Moderate to high",
+      "temperature": "50°F - 70°F",
+      "soil": "Moist standard potting soil",
+      "fertilizer": "Monthly in spring & summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Soil should be moist but well-drained. Mist leaves periodically."
+      },
+      {
+        "type": "sunlight",
+        "description": "Thrives in bright indirect light; avoid scorching hot sun."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 20,
+    "slug": "lavender-fields",
+    "name": "Lavender Fields",
+    "scientificName": "Lavandula angustifolia",
+    "category": "Outdoor Plants",
+    "price": 16.99,
+    "originalPrice": 22,
+    "discount": "23% OFF",
+    "rating": 4.9,
+    "reviewCount": 890,
+    "image": "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pollinator Pick",
+    "badge": "Aromatic",
+    "description": "Fragrant purple flower spikes and silvery foliage that attract friendly pollinators and calm the senses.",
+    "features": [
+      "Aromatic Fragrance",
+      "Bee & Butterfly Friendly",
+      "Drought Tolerant"
+    ],
+    "highlights": [
+      "Soothing essential oil fragrance",
+      "Loves sunny patios, balconies, and garden beds",
+      "Naturally deters mosquitoes and pests"
+    ],
+    "care": {
+      "sunlight": "Full direct sun (6+ hours daily)",
+      "water": "Allow soil to dry between deep waterings",
+      "humidity": "Low humidity, good airflow",
+      "temperature": "60°F - 85°F",
+      "soil": "Lean, rocky, alkaline, well-draining soil",
+      "fertilizer": "Light compost in spring"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Do not overwater. Let the root zone dry out almost completely."
+      },
+      {
+        "type": "sunlight",
+        "description": "Requires full all-day sun to bloom profusely."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Mildly toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 21,
+    "slug": "rosemary-bush",
+    "name": "Rosemary Bush",
+    "scientificName": "Salvia rosmarinus",
+    "category": "Outdoor Plants",
+    "price": 15,
+    "originalPrice": 19,
+    "discount": "21% OFF",
+    "rating": 4.8,
+    "reviewCount": 420,
+    "image": "https://images.unsplash.com/photo-1515586000433-45406d8e6662?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1515586000433-45406d8e6662?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Culinary Herb",
+    "badge": "Edible",
+    "description": "Aromatic woody perennial with pine-scented needle leaves, essential for gourmet kitchen gardens.",
+    "features": [
+      "Culinary Herb",
+      "Drought Hardy",
+      "Aromatic"
+    ],
+    "highlights": [
+      "Fresh culinary seasoning year-round",
+      "Extremely hardy once established",
+      "Produces charming pale blue flowers"
+    ],
+    "care": {
+      "sunlight": "Full blazing sun (6-8 hours)",
+      "water": "Water when top 2 inches dry out completely",
+      "humidity": "Low to moderate",
+      "temperature": "55°F - 80°F",
+      "soil": "Sandy, rocky, well-aerated soil",
+      "fertilizer": "Minimal feeding needed"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow soil to dry thoroughly between waterings."
+      },
+      {
+        "type": "pruning",
+        "description": "Snip sprigs regularly to encourage bushy branching."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 22,
+    "slug": "sweet-basil",
+    "name": "Sweet Basil",
+    "scientificName": "Ocimum basilicum",
+    "category": "Outdoor Plants",
+    "price": 9.99,
+    "originalPrice": 13.99,
+    "discount": "28% OFF",
+    "rating": 4.7,
+    "reviewCount": 650,
+    "image": "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Culinary Herb",
+    "badge": "Kitchen garden",
+    "description": "Luscious, fragrant green leaves bursting with peppery sweetness, perfect for fresh pestos and pizzas.",
+    "features": [
+      "Kitchen Essential",
+      "Fast Growing",
+      "Aromatic"
+    ],
+    "highlights": [
+      "Harvest fresh pesto leaves weekly",
+      "Fast-growing windowsill herb",
+      "Invigorating herbal scent"
+    ],
+    "care": {
+      "sunlight": "Full direct sunlight (6+ hours)",
+      "water": "Water regularly when top 1 inch feels dry",
+      "humidity": "Average household",
+      "temperature": "65°F - 85°F",
+      "soil": "Rich, moist organic potting soil",
+      "fertilizer": "Organic fish emulsion every 2 weeks"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water at the base in early morning to prevent damp leaf fungus."
+      },
+      {
+        "type": "harvesting",
+        "description": "Pinch flower buds immediately to keep leaves sweet and tender."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Full sun",
+    "cycle": "Annual",
+    "careLevel": "Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 23,
+    "slug": "peppermint-plant",
+    "name": "Peppermint Plant",
+    "scientificName": "Mentha x piperita",
+    "category": "Outdoor Plants",
+    "price": 11.99,
+    "originalPrice": 15,
+    "discount": "20% OFF",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "image": "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Aromatic & Tea",
+    "badge": "Refreshing",
+    "description": "Cooling, aromatic herbal foliage that brew refreshing homemade teas and naturally repel pests.",
+    "features": [
+      "Fresh Herbal Tea",
+      "Fast Spreading",
+      "Pest Repellent"
+    ],
+    "highlights": [
+      "Invigorating natural menthol aroma",
+      "Grow in containers for endless tea harvest",
+      "Naturally repels spiders and ants"
+    ],
+    "care": {
+      "sunlight": "Partial shade to morning sun",
+      "water": "Keep consistently damp",
+      "humidity": "Moderate",
+      "temperature": "55°F - 75°F",
+      "soil": "Rich, moisture-retaining organic soil",
+      "fertilizer": "Light monthly organic feeding"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Mint loves moisture; ensure the soil never dries out completely."
+      },
+      {
+        "type": "potting",
+        "description": "Grow in pots to keep vigorous roots contained."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Mildly toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 24,
+    "slug": "anthurium-red",
+    "name": "Anthurium Red",
+    "scientificName": "Anthurium andraeanum",
+    "category": "Flowering Plants",
+    "price": 28.99,
+    "originalPrice": 36,
+    "discount": "19% OFF",
+    "rating": 4.8,
+    "reviewCount": 520,
+    "image": "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Long Blooming",
+    "badge": "Exotic Bloom",
+    "description": "Glossy red heart-shaped spathes with yellow spadices that flower continuously all year.",
+    "features": [
+      "Year-round Blooms",
+      "Heart-shaped spathes",
+      "Tropical Color"
+    ],
+    "highlights": [
+      "Blooms can last up to 8 weeks each",
+      "Striking lacquer-finish crimson petals",
+      "NASA recognized air purifier"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light (no direct sun)",
+      "water": "Water when top 1-2 inches are dry",
+      "humidity": "High humidity preferred (60%+)",
+      "temperature": "65°F - 80°F",
+      "soil": "Coarse orchid bark and peat mix",
+      "fertilizer": "High-phosphorus fertilizer monthly"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Do not let soil get waterlogged. Water thoroughly then allow runoff to drain."
+      },
+      {
+        "type": "blooming",
+        "description": "Bright indirect light is required to trigger continuous red flowering."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 25,
+    "slug": "orchid-phalaenopsis",
+    "name": "Phalaenopsis Orchid",
+    "scientificName": "Phalaenopsis amabilis",
+    "category": "Flowering Plants",
+    "price": 34,
+    "originalPrice": 44,
+    "discount": "22% OFF",
+    "rating": 4.9,
+    "reviewCount": 810,
+    "image": "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Elegance",
+    "description": "Exquisite moth-shaped blossoms in pristine white that radiate calm refinement for months.",
+    "features": [
+      "Pet Friendly",
+      "Long-lasting Blooms",
+      "Refined Decor"
+    ],
+    "highlights": [
+      "Safe for pets",
+      "Blooms persist for 2 to 3 months",
+      "Potted in premium New Zealand sphagnum bark"
+    ],
+    "care": {
+      "sunlight": "Bright indirect east-facing window",
+      "water": "Soak bark once a week; allow to drain",
+      "humidity": "50% - 70% humidity",
+      "temperature": "65°F - 75°F",
+      "soil": "Pure pine bark orchid medium",
+      "fertilizer": "Weakly weekly orchid fertilizer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Ice cube method or 10-minute soak in water, then drain completely."
+      },
+      {
+        "type": "reblooming",
+        "description": "Cool autumn night temperatures help trigger fresh flower spikes."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Medium",
+    "potSize": "5 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 26,
+    "slug": "cast-iron-plant",
+    "name": "Cast Iron Plant",
+    "scientificName": "Aspidistra elatior",
+    "category": "Indoor Plants",
+    "price": 29.99,
+    "originalPrice": 38,
+    "discount": "21% OFF",
+    "rating": 4.9,
+    "reviewCount": 320,
+    "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Tough as iron",
+    "description": "Virtually indestructible foliage that survives deep shade, erratic watering, and cold drafts.",
+    "features": [
+      "Pet Friendly",
+      "Ultra Hardy",
+      "Deep Shade Tolerant"
+    ],
+    "highlights": [
+      "Non-toxic to pets",
+      "Earned its name from its ironclad constitution",
+      "Lush dark emerald lance foliage"
+    ],
+    "care": {
+      "sunlight": "Low shade to medium indirect light",
+      "water": "Water when top 2 inches dry out",
+      "humidity": "Any household humidity",
+      "temperature": "50°F - 80°F",
+      "soil": "Standard indoor potting mix",
+      "fertilizer": "Light feed twice a year"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Drought tolerant; do not keep roots submerged in water."
+      },
+      {
+        "type": "sunlight",
+        "description": "Keep away from direct harsh rays which bleach dark foliage."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Low light",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 27,
+    "slug": "prayer-plant-red",
+    "name": "Red Prayer Plant",
+    "scientificName": "Maranta leuconeura",
+    "category": "Indoor Plants",
+    "price": 20.99,
+    "originalPrice": 26,
+    "discount": "19% OFF",
+    "rating": 4.7,
+    "reviewCount": 480,
+    "image": "https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Pet Friendly",
+    "description": "Velvety leaves striped with carmine red herringbone veins that fold up each evening in prayer.",
+    "features": [
+      "Pet Friendly",
+      "Night Folding Leaves",
+      "Vivid Veins"
+    ],
+    "highlights": [
+      "Non-toxic to cats and dogs",
+      "Leaves fold together like hands in prayer at dusk",
+      "Vivid red veins provide striking table contrast"
+    ],
+    "care": {
+      "sunlight": "Medium to bright indirect light",
+      "water": "Keep consistently damp with filtered water",
+      "humidity": "Medium to high (50%+)",
+      "temperature": "65°F - 80°F",
+      "soil": "Rich, well-aerated potting mix",
+      "fertilizer": "Diluted fertilizer every two weeks in summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Keep soil lightly moist. Avoid cold tap water."
+      },
+      {
+        "type": "sunlight",
+        "description": "Indirect light preserves the rich red veins."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 28,
+    "slug": "ponytail-palm",
+    "name": "Ponytail Palm",
+    "scientificName": "Beaucarnea recurvata",
+    "category": "Succulents & Cacti",
+    "price": 26.5,
+    "originalPrice": 34,
+    "discount": "22% OFF",
+    "rating": 4.8,
+    "reviewCount": 390,
+    "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Playful",
+    "description": "Swollen bulbous water-storing caudex topped with a whimsical fountain of curly ribbon fronds.",
+    "features": [
+      "Pet Friendly",
+      "Water Reservoir Base",
+      "Slow Growing"
+    ],
+    "highlights": [
+      "Pet friendly certified",
+      "Stores weeks of water in its elephant-foot base",
+      "Charming cascade of curly ribbons"
+    ],
+    "care": {
+      "sunlight": "Full sun to bright indirect light",
+      "water": "Water thoroughly every 2-3 weeks; let dry",
+      "humidity": "Low to average",
+      "temperature": "60°F - 85°F",
+      "soil": "Fast-draining cactus and succulent soil",
+      "fertilizer": "Light feeding in spring"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow soil to dry out almost completely before watering again."
+      },
+      {
+        "type": "sunlight",
+        "description": "Happy on sunny windowsills or bright floor areas."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 29,
+    "slug": "zebra-haworthia",
+    "name": "Zebra Haworthia",
+    "scientificName": "Haworthiopsis fasciata",
+    "category": "Succulents & Cacti",
+    "price": 12.99,
+    "originalPrice": 16.99,
+    "discount": "23% OFF",
+    "rating": 4.9,
+    "reviewCount": 620,
+    "image": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Compact",
+    "description": "Compact architectural rosette studded with raised white horizontal zebra ridges.",
+    "features": [
+      "Pet Friendly",
+      "Desk Size",
+      "Drought Resilient"
+    ],
+    "highlights": [
+      "100% non-toxic for cats and dogs",
+      "Ideal size for home office workstations",
+      "Embossed white striped texture"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light or gentle morning sun",
+      "water": "Water every 2-3 weeks when soil is dry",
+      "humidity": "Low household humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Cactus soil with pumice or perlite",
+      "fertilizer": "Once in spring at half strength"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Avoid standing water in rosette center. Water the soil perimeter."
+      },
+      {
+        "type": "light",
+        "description": "Prefers bright indirect light over scorching midday rays."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Small",
+    "potSize": "3 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 30,
+    "slug": "echeveria-elegans",
+    "name": "Echeveria Elegans",
+    "scientificName": "Echeveria elegans",
+    "category": "Succulents & Cacti",
+    "price": 11.5,
+    "originalPrice": 15,
+    "discount": "23% OFF",
+    "rating": 4.8,
+    "reviewCount": 440,
+    "image": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Geometric",
+    "description": "Silvery powder-blue Mexican Snowball succulent with tight, symmetrical rose-like rosettes.",
+    "features": [
+      "Pet Friendly",
+      "Powder Blue Hue",
+      "Geometric Rosette"
+    ],
+    "highlights": [
+      "Safe for pets",
+      "Covered in protective farina white wax coating",
+      "Pinkish tips develop in bright sunlight"
+    ],
+    "care": {
+      "sunlight": "Full direct sunlight (4-6 hours)",
+      "water": "Soak and dry method every 2 weeks",
+      "humidity": "Low humidity",
+      "temperature": "60°F - 80°F",
+      "soil": "Gritty cactus & succulent blend",
+      "fertilizer": "Diluted succulent fertilizer once in summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water the soil directly, not the leaves, to preserve delicate powder coating."
+      },
+      {
+        "type": "sunlight",
+        "description": "Needs high light to avoid stretching."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 31,
+    "slug": "pothos-marble-queen",
+    "name": "Marble Queen Pothos",
+    "scientificName": "Epipremnum aureum Marble Queen",
+    "category": "Indoor Plants",
+    "price": 18.99,
+    "originalPrice": 24.99,
+    "discount": "24% OFF",
+    "rating": 4.9,
+    "reviewCount": 560,
+    "image": "https://images.unsplash.com/photo-1596724817791-9040a54e14b0?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1596724817791-9040a54e14b0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Variegated Beauty",
+    "badge": "Variegated",
+    "description": "Heart-shaped leaves splashed with creamy white marble variegation that brightens living spaces.",
+    "features": [
+      "Marble Variegation",
+      "Air Purifying",
+      "Trailing Vine"
+    ],
+    "highlights": [
+      "High contrast creamy white and emerald splash",
+      "Fast-growing cascade for hanging baskets",
+      "Cleanses benzene and formaldehyde"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light to maintain white marbling",
+      "water": "Water when top 50% of soil feels dry",
+      "humidity": "Moderate humidity",
+      "temperature": "65°F - 85°F",
+      "soil": "Peat and perlite well-draining mix",
+      "fertilizer": "Bi-monthly houseplant feed in spring"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow top half to dry out between waterings."
+      },
+      {
+        "type": "sunlight",
+        "description": "Keep in bright indirect light so variegation stays creamy white."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 32,
+    "slug": "pothos-neon",
+    "name": "Neon Pothos",
+    "scientificName": "Epipremnum aureum Neon",
+    "category": "Indoor Plants",
+    "price": 19.99,
+    "originalPrice": 26,
+    "discount": "23% OFF",
+    "rating": 4.8,
+    "reviewCount": 380,
+    "image": "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Electrifying Color",
+    "badge": "Vibrant",
+    "description": "Electric chartreuse lime-green leaves that deliver an intense pop of modern color.",
+    "features": [
+      "Electric Lime Color",
+      "Hardy Trailing Vine",
+      "Easy Care"
+    ],
+    "highlights": [
+      "Glowing neon lime foliage stands out anywhere",
+      "Fast growing cascading stems",
+      "Forgiving of occasional missed watering"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light for brightest chartreuse",
+      "water": "Water every 7-10 days",
+      "humidity": "Average room humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Well-draining indoor potting mix",
+      "fertilizer": "Quarter-strength fertilizer every month"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water when top couple of inches are dry."
+      },
+      {
+        "type": "sunlight",
+        "description": "Bright indirect light maintains the radiant chartreuse tone."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 33,
+    "slug": "philodendron-heartleaf",
+    "name": "Heartleaf Philodendron",
+    "scientificName": "Philodendron hederaceum",
+    "category": "Indoor Plants",
+    "price": 17.5,
+    "originalPrice": 22,
+    "discount": "20% OFF",
+    "rating": 4.8,
+    "reviewCount": 670,
+    "image": "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Sweetheart Plant",
+    "badge": "Classic",
+    "description": "Charming sweetheart-shaped deep green leaves that trail effortlessly over bookshelves and planters.",
+    "features": [
+      "Heart-shaped Leaves",
+      "Fast Trailing",
+      "Low Light Tolerant"
+    ],
+    "highlights": [
+      "Affectionate heart foliage silhouette",
+      "Tolerates lower light and neglect",
+      "Easily propagated from single stem cuttings"
+    ],
+    "care": {
+      "sunlight": "Low to medium indirect light",
+      "water": "Allow top half of soil to dry before watering",
+      "humidity": "Any household humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Aerated organic indoor potting mix",
+      "fertilizer": "Standard liquid feed in spring/summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water once top inch or two dries out. Drooping leaves signal thirst."
+      },
+      {
+        "type": "sunlight",
+        "description": "Thrives in medium indirect light; also does well in shaded spots."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Low light",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 34,
+    "slug": "philodendron-birkin",
+    "name": "Philodendron Birkin",
+    "scientificName": "Philodendron Birkin",
+    "category": "Indoor Plants",
+    "price": 24.99,
+    "originalPrice": 32,
+    "discount": "22% OFF",
+    "rating": 4.9,
+    "reviewCount": 410,
+    "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pinstripe Foliage",
+    "badge": "Collector",
+    "description": "Stunning dark green glossy leaves adorned with crisp, creamy-white pinstriped variegation.",
+    "features": [
+      "Crisp Pinstripes",
+      "Compact Upright Growth",
+      "Rare Variegation"
+    ],
+    "highlights": [
+      "Each new leaf emerges with unique pinstripes",
+      "Maintains neat compact tabletop shape",
+      "Rare designer cultivar"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light",
+      "water": "Water when top 2 inches dry out",
+      "humidity": "Medium to high humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Rich, well-draining chunky aroid mix",
+      "fertilizer": "Balanced half-strength fertilizer monthly"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water thoroughly, allowing excess to drain freely."
+      },
+      {
+        "type": "sunlight",
+        "description": "Bright indirect light ensures crisp pinstriping on new leaves."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 35,
+    "slug": "philodendron-pink-princess",
+    "name": "Pink Princess Philodendron",
+    "scientificName": "Philodendron erubescens Pink Princess",
+    "category": "Indoor Plants",
+    "price": 45,
+    "originalPrice": 60,
+    "discount": "25% OFF",
+    "rating": 4.9,
+    "reviewCount": 520,
+    "image": "https://images.unsplash.com/photo-1604762524889-3e2fccbc2568?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1604762524889-3e2fccbc2568?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Ultra Rare",
+    "badge": "Rare Find",
+    "description": "Coveted black-burgundy leaves splashed with breathtaking sectors of bubblegum pink.",
+    "features": [
+      "Hot Pink Variegation",
+      "Rare Specimen",
+      "Climbing Foliage"
+    ],
+    "highlights": [
+      "Highly prized collector variegated plant",
+      "Dramatic contrast of dark foliage and bubblegum pink",
+      "Thrives with a moss climbing pole"
+    ],
+    "care": {
+      "sunlight": "Bright indirect light (crucial for pink coloring)",
+      "water": "Water when top 1-2 inches are dry",
+      "humidity": "High humidity (60%+)",
+      "temperature": "65°F - 80°F",
+      "soil": "Chunky orchid bark, perlite, and peat moss mix",
+      "fertilizer": "Diluted fertilizer once a month in active season"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water thoroughly and avoid soggy root conditions."
+      },
+      {
+        "type": "sunlight",
+        "description": "Bright filtered sunlight is essential to stimulate pink variegation."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 36,
+    "slug": "chinese-evergreen-silver-bay",
+    "name": "Aglaonema Silver Bay",
+    "scientificName": "Aglaonema commutatum Silver Bay",
+    "category": "Indoor Plants",
+    "price": 27,
+    "originalPrice": 35,
+    "discount": "23% OFF",
+    "rating": 4.8,
+    "reviewCount": 390,
+    "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Low Light Champion",
+    "badge": "Low light",
+    "description": "Silvery-centered broad leaves framed in deep forest green that flourish in dark rooms.",
+    "features": [
+      "Low Light Tolerant",
+      "Air Purifying",
+      "Thick Lush Canopy"
+    ],
+    "highlights": [
+      "Tolerates very dim low-light conditions",
+      "Removes benzene, formaldehyde, and other indoor toxins",
+      "Broad silver shields reflect ambient lighting"
+    ],
+    "care": {
+      "sunlight": "Low to moderate indirect light",
+      "water": "Allow top 50% of soil to dry between waterings",
+      "humidity": "Average household humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Standard indoor potting mix with good drainage",
+      "fertilizer": "Feed once in spring and once in summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Very forgiving; water every 10-14 days depending on light levels."
+      },
+      {
+        "type": "sunlight",
+        "description": "Thrives in dark corners where other plants struggle."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Low light",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 37,
+    "slug": "aglaonema-red-siam",
+    "name": "Aglaonema Red Siam",
+    "scientificName": "Aglaonema Siam Aurora",
+    "category": "Indoor Plants",
+    "price": 29.5,
+    "originalPrice": 38,
+    "discount": "22% OFF",
+    "rating": 4.8,
+    "reviewCount": 440,
+    "image": "https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Colorful Foliage",
+    "badge": "Ruby Edge",
+    "description": "Lush green leaves edged and veined with radiant ruby red and hot pink highlights.",
+    "features": [
+      "Ruby Edged Leaves",
+      "Low Light Friendly",
+      "Colorful Accents"
+    ],
+    "highlights": [
+      "Brings vivid pink-red warmth to indoor decor",
+      "Very easy care requirements",
+      "Tough, upright arching growth"
+    ],
+    "care": {
+      "sunlight": "Medium to bright indirect light",
+      "water": "Water when top 2 inches dry out",
+      "humidity": "Moderate humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Peat-based potting soil with perlite",
+      "fertilizer": "Light monthly feeding in summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water when topsoil feels dry. Avoid letting sit in cold saucer water."
+      },
+      {
+        "type": "sunlight",
+        "description": "Medium to bright indirect light keeps ruby margins vibrant."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 38,
+    "slug": "croton-petra",
+    "name": "Croton Petra",
+    "scientificName": "Codiaeum variegatum Petra",
+    "category": "Indoor Plants",
+    "price": 22,
+    "originalPrice": 28,
+    "discount": "21% OFF",
+    "rating": 4.6,
+    "reviewCount": 370,
+    "image": "https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Fiery Tropical",
+    "badge": "Fiery Colors",
+    "description": "Explosive leathery foliage decorated with intense sunset bands of fiery red, orange, and yellow.",
+    "features": [
+      "Sunset Colors",
+      "Bold Statement",
+      "Sun Loving"
+    ],
+    "highlights": [
+      "Spectacular sunset colored leaves",
+      "Loves sunny south-facing windowsills",
+      "Provides rich autumnal color year round"
+    ],
+    "care": {
+      "sunlight": "Bright direct morning sun to bright indirect",
+      "water": "Keep consistently damp; water when top inch is dry",
+      "humidity": "High humidity (50%+)",
+      "temperature": "65°F - 80°F",
+      "soil": "Rich, well-draining potting soil",
+      "fertilizer": "Feed every 3 weeks in summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Keep evenly moist. If leaves drop, check watering and light."
+      },
+      {
+        "type": "sunlight",
+        "description": "Full sunlight produces the richest reds and golds."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Moderate",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 39,
+    "slug": "parlor-palm",
+    "name": "Parlor Palm",
+    "scientificName": "Chamaedorea elegans",
+    "category": "Indoor Plants",
+    "price": 18.5,
+    "originalPrice": 24,
+    "discount": "23% OFF",
+    "rating": 4.8,
+    "reviewCount": 590,
+    "image": "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Pet Friendly",
+    "description": "Beloved Victorian parlor palm with delicate, arching fan fronds that flourish in low light.",
+    "features": [
+      "Pet Friendly",
+      "Low Light Tolerant",
+      "Victorian Heritage"
+    ],
+    "highlights": [
+      "100% safe for cats and dogs",
+      "Popular since Victorian times for low light living rooms",
+      "Slow, stately upright habit"
+    ],
+    "care": {
+      "sunlight": "Low to medium indirect light",
+      "water": "Water when top 1-2 inches dry",
+      "humidity": "Average household humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Standard potting soil with peat",
+      "fertilizer": "Light monthly feed during spring"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow surface to dry before giving another drink. Avoid soggy bottoms."
+      },
+      {
+        "type": "sunlight",
+        "description": "Thrives in subdued light; direct sun will bleach fronds."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Low light",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 40,
+    "slug": "kentia-palm",
+    "name": "Kentia Palm",
+    "scientificName": "Howea forsteriana",
+    "category": "Indoor Plants",
+    "price": 54.99,
+    "originalPrice": 70,
+    "discount": "21% OFF",
+    "rating": 4.9,
+    "reviewCount": 280,
+    "image": "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1600411832986-5a4477b44a19?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Regal Palm",
+    "description": "The premier luxury architectural palm with graceful arching dark green fronds and high shade tolerance.",
+    "features": [
+      "Pet Friendly",
+      "Luxury Architectural",
+      "Durable Shade Palm"
+    ],
+    "highlights": [
+      "Non-toxic to pets",
+      "Favored in high-end hotels and residences",
+      "Extreme durability in low-light spaces"
+    ],
+    "care": {
+      "sunlight": "Low to bright indirect light",
+      "water": "Water when top 2 inches dry out",
+      "humidity": "Moderate humidity",
+      "temperature": "65°F - 75°F",
+      "soil": "Sandy, aerated palm potting soil",
+      "fertilizer": "Slow release palm fertilizer in spring"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water thoroughly, discard excess water from tray. Let topsoil dry."
+      },
+      {
+        "type": "sunlight",
+        "description": "Adaptable from shady alcoves to bright rooms."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Large",
+    "potSize": "10 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 41,
+    "slug": "dracaena-marginata",
+    "name": "Dragon Tree",
+    "scientificName": "Dracaena marginata",
+    "category": "Indoor Plants",
+    "price": 23.99,
+    "originalPrice": 30,
+    "discount": "20% OFF",
+    "rating": 4.7,
+    "reviewCount": 460,
+    "image": "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Architectural",
+    "badge": "Sculptural",
+    "description": "Slender curving woody trunks topped with crowns of sword-shaped leaves with thin red edges.",
+    "features": [
+      "Architectural Silhouette",
+      "Air Cleansing",
+      "Drought Resilient"
+    ],
+    "highlights": [
+      "Sculptural trunks add vertical interest",
+      "Removes trichloroethylene and xylene",
+      "Easy care, drought tolerant"
+    ],
+    "care": {
+      "sunlight": "Medium to bright indirect light",
+      "water": "Water when top 50% of soil dries out",
+      "humidity": "Average household humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Fast-draining potting soil with loam",
+      "fertilizer": "Light monthly feeding during warm months"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow top half of soil to dry before watering. Sensitive to fluoride."
+      },
+      {
+        "type": "sunlight",
+        "description": "Bright indirect light preserves the crimson margin."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Very Easy",
+    "size": "Large",
+    "potSize": "8 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 42,
+    "slug": "corn-plant",
+    "name": "Dracaena Corn Plant",
+    "scientificName": "Dracaena fragrans Massangeana",
+    "category": "Indoor Plants",
+    "price": 31,
+    "originalPrice": 40,
+    "discount": "23% OFF",
+    "rating": 4.8,
+    "reviewCount": 390,
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Floor Plant",
+    "badge": "Stately",
+    "description": "Substantial wood cane trunks bearing lush rosettes of broad leaves with golden yellow central stripes.",
+    "features": [
+      "Floor Standing",
+      "Air Filtering",
+      "Golden Variegation"
+    ],
+    "highlights": [
+      "Substantial architectural wood cane",
+      "Top tier air purification capability",
+      "Thrives on simple maintenance routines"
+    ],
+    "care": {
+      "sunlight": "Medium to bright indirect light",
+      "water": "Allow top 2-3 inches to dry between waterings",
+      "humidity": "Average room humidity",
+      "temperature": "60°F - 75°F",
+      "soil": "Rich aerated indoor potting mix",
+      "fertilizer": "Monthly feeding in summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water thoroughly then let drain completely. Never leave in saucer pool."
+      },
+      {
+        "type": "sunlight",
+        "description": "Medium filtered light keeps golden central stripes sharp."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Large",
+    "potSize": "8 inch",
+    "toxicity": "Toxic to pets",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 43,
+    "slug": "maidenhair-fern",
+    "name": "Maidenhair Fern",
+    "scientificName": "Adiantum raddianum",
+    "category": "Ferns & Foliage",
+    "price": 19.99,
+    "originalPrice": 26,
+    "discount": "23% OFF",
+    "rating": 4.5,
+    "reviewCount": 310,
+    "image": "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Delicate",
+    "description": "Ethereal cloud of lace-like fan leaflets on ebony wire stems that gently sway with any breeze.",
+    "features": [
+      "Pet Friendly",
+      "Lace Foliage",
+      "Bathroom Companion"
+    ],
+    "highlights": [
+      "Non-toxic to pets",
+      "Ultra delicate lace foliage silhouette",
+      "Loves bathroom humidity"
+    ],
+    "care": {
+      "sunlight": "Dappled indirect shade",
+      "water": "Keep consistently damp; never let dry",
+      "humidity": "Very high humidity (65%+)",
+      "temperature": "65°F - 75°F",
+      "soil": "Moist peat moss and rich potting mix",
+      "fertilizer": "Quarter strength monthly in summer"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Soil must remain damp like a wrung-out sponge."
+      },
+      {
+        "type": "humidity",
+        "description": "Mist daily or keep on a pebble humidity tray."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Moderate",
+    "size": "Small",
+    "potSize": "4 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 44,
+    "slug": "birds-nest-fern",
+    "name": "Bird's Nest Fern",
+    "scientificName": "Asplenium nidus",
+    "category": "Ferns & Foliage",
+    "price": 22.5,
+    "originalPrice": 28,
+    "discount": "20% OFF",
+    "rating": 4.8,
+    "reviewCount": 430,
+    "image": "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Pet Friendly",
+    "badge": "Pet Friendly",
+    "description": "Wavy apple-green crinkled fronds that unfurl from a central fuzzy rosette resembling a nest.",
+    "features": [
+      "Pet Friendly",
+      "Ruffled Fronds",
+      "Epiphytic Fern"
+    ],
+    "highlights": [
+      "100% pet safe",
+      "Charming ruffled chartreuse leaves",
+      "Simpler care than traditional feathery ferns"
+    ],
+    "care": {
+      "sunlight": "Medium indirect light",
+      "water": "Water around edges when top inch dries; keep center dry",
+      "humidity": "Medium to high humidity",
+      "temperature": "65°F - 80°F",
+      "soil": "Rich, aerated peat and bark mix",
+      "fertilizer": "Diluted fertilizer every month"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water the perimeter of soil. Never pour water into the central nest rosette."
+      },
+      {
+        "type": "sunlight",
+        "description": "Avoid direct sunlight which turns pale fronds yellow."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Part shade",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 45,
+    "slug": "staghorn-fern",
+    "name": "Staghorn Fern",
+    "scientificName": "Platycerium bifurcatum",
+    "category": "Ferns & Foliage",
+    "price": 32,
+    "originalPrice": 42,
+    "discount": "24% OFF",
+    "rating": 4.9,
+    "reviewCount": 260,
+    "image": "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1599685315640-9ceab2f58944?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Living Art",
+    "badge": "Wall Art",
+    "description": "Sculptural antler-shaped fronds that can be mounted directly on wooden wall boards as living art.",
+    "features": [
+      "Wall Mounted",
+      "Antler Fronds",
+      "Pet Friendly"
+    ],
+    "highlights": [
+      "Pet friendly certified",
+      "Can be displayed mounted on rustic wood plaques",
+      "Fascinating dual frond anatomy"
+    ],
+    "care": {
+      "sunlight": "Bright indirect to filtered light",
+      "water": "Soak root ball in water bath once a week",
+      "humidity": "High humidity",
+      "temperature": "60°F - 80°F",
+      "soil": "Sphagnum moss and orchid bark",
+      "fertilizer": "Diluted balanced feed quarterly"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Submerge the mounted plaque or root ball in water for 10-15 minutes weekly."
+      },
+      {
+        "type": "care",
+        "description": "Do not wipe off fuzzy white felt on fronds; it helps hold moisture."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Moderate",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 46,
+    "slug": "umbrella-tree",
+    "name": "Schefflera Umbrella Tree",
+    "scientificName": "Schefflera arboricola",
+    "category": "Indoor Plants",
+    "price": 24.5,
+    "originalPrice": 32,
+    "discount": "23% OFF",
+    "rating": 4.7,
+    "reviewCount": 410,
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Bonsai & Tree",
+    "badge": "Popular",
+    "description": "Clusters of 7-9 glossy leaflets radiating from central stems like miniature emerald umbrellas.",
+    "features": [
+      "Umbrella Canopy",
+      "Fast Growing",
+      "Easy Pruning"
+    ],
+    "highlights": [
+      "Distinctive palmately compound umbrella leaves",
+      "Responds well to shaping and pruning",
+      "Adaptable to varied indoor conditions"
+    ],
+    "care": {
+      "sunlight": "Bright indirect to medium light",
+      "water": "Water when top 2 inches dry out",
+      "humidity": "Average household",
+      "temperature": "65°F - 80°F",
+      "soil": "Standard indoor potting mix",
+      "fertilizer": "Standard liquid plant food monthly"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Allow soil to dry somewhat between waterings; avoid constantly soggy roots."
+      },
+      {
+        "type": "pruning",
+        "description": "Pinch growing tips to encourage fuller, bushier branching."
+      }
+    ],
+    "watering": "Average",
+    "sunlight": "Bright indirect",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Large",
+    "potSize": "8 inch",
+    "toxicity": "Mildly toxic to pets",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 47,
+    "slug": "jasmine-sambac",
+    "name": "Arabian Jasmine",
+    "scientificName": "Jasminum sambac",
+    "category": "Flowering Plants",
+    "price": 23,
+    "originalPrice": 30,
+    "discount": "23% OFF",
+    "rating": 4.9,
+    "reviewCount": 680,
+    "image": "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Heavenly Fragrance",
+    "badge": "Fragrant Bloom",
+    "description": "Intensely fragrant star-shaped white flowers that release legendary sweet perfume at dusk.",
+    "features": [
+      "Legendary Fragrance",
+      "Star Blooms",
+      "Tea Infusion"
+    ],
+    "highlights": [
+      "Famous tea flavoring and aroma",
+      "Blooms repeatedly from spring through autumn",
+      "Fill rooms with natural intoxicating sweetness"
+    ],
+    "care": {
+      "sunlight": "Full morning sun to bright indirect light",
+      "water": "Keep evenly moist during flowering season",
+      "humidity": "Medium to high humidity",
+      "temperature": "65°F - 85°F",
+      "soil": "Rich, moist organic soil with perlite",
+      "fertilizer": "High potassium bloom food every 2 weeks"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water consistently during flowering season. Do not let soil dry completely."
+      },
+      {
+        "type": "sunlight",
+        "description": "At least 4-6 hours of direct sun daily powers abundant blooms."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Medium",
+    "potSize": "6 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 48,
+    "slug": "hibiscus-tropical",
+    "name": "Tropical Hibiscus",
+    "scientificName": "Hibiscus rosa-sinensis",
+    "category": "Flowering Plants",
+    "price": 26,
+    "originalPrice": 34,
+    "discount": "23% OFF",
+    "rating": 4.8,
+    "reviewCount": 510,
+    "image": "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Vibrant Blooms",
+    "badge": "Tropical Bloom",
+    "description": "Magnificent trumpet-shaped fiery blossoms with prominent long stamen columns.",
+    "features": [
+      "Dinner-plate Blooms",
+      "Hummingbird Magnet",
+      "Patio Showstopper"
+    ],
+    "highlights": [
+      "Produces enormous 5-to-7 inch fiery flowers",
+      "Attracts hummingbirds and butterflies",
+      "Continuous bloom show throughout warm months"
+    ],
+    "care": {
+      "sunlight": "Full sun (6+ hours daily)",
+      "water": "Water daily in hot summer weather",
+      "humidity": "Medium to high",
+      "temperature": "65°F - 85°F",
+      "soil": "Rich loamy soil with excellent drainage",
+      "fertilizer": "High potassium bloom fertilizer bi-weekly"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Very thirsty in sunny weather. Water thoroughly whenever topsoil dries."
+      },
+      {
+        "type": "sunlight",
+        "description": "Requires abundant direct sunlight to form buds."
+      }
+    ],
+    "watering": "Frequent",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Medium",
+    "size": "Large",
+    "potSize": "8 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": false
+  },
+  {
+    "id": 49,
+    "slug": "bougainvillea-spectabilis",
+    "name": "Bougainvillea Royal Magenta",
+    "scientificName": "Bougainvillea spectabilis",
+    "category": "Outdoor Plants",
+    "price": 29.99,
+    "originalPrice": 39,
+    "discount": "23% OFF",
+    "rating": 4.8,
+    "reviewCount": 470,
+    "image": "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Cascading Color",
+    "badge": "Spectacular",
+    "description": "Riotous cascade of paper-thin magenta bracts that blanket trellises and sun-drenched balconies.",
+    "features": [
+      "Vibrant Bracts",
+      "Drought Resilient",
+      "Cascading Trellis"
+    ],
+    "highlights": [
+      "Electric magenta coverage all summer long",
+      "Extremely drought tolerant once established",
+      "Flourishes in hot, sunny Mediterranean climates"
+    ],
+    "care": {
+      "sunlight": "Full blazing sun (6-8 hours minimum)",
+      "water": "Water thoroughly, then let dry almost completely",
+      "humidity": "Low to average",
+      "temperature": "65°F - 95°F",
+      "soil": "Well-draining gritty soil mix",
+      "fertilizer": "Bougainvillea special feed every 3 weeks"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Avoid overwatering. Slight water stress stimulates heavier flowering bracts."
+      },
+      {
+        "type": "sunlight",
+        "description": "Requires full direct sun to produce intense magenta color."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Large",
+    "potSize": "8 inch",
+    "toxicity": "Mildly toxic if ingested",
+    "inStock": true,
+    "isPopular": true
+  },
+  {
+    "id": 50,
+    "slug": "olive-tree",
+    "name": "Mediterranean Olive Tree",
+    "scientificName": "Olea europaea",
+    "category": "Outdoor Plants",
+    "price": 48,
+    "originalPrice": 62,
+    "discount": "23% OFF",
+    "rating": 4.9,
+    "reviewCount": 820,
+    "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80"
+    ],
+    "tag": "Farm Favorite",
+    "badge": "Farm favorite",
+    "description": "Timeless Mediterranean beauty with silvery sage-green leaves, rustic trunk, and peaceful symbolism.",
+    "features": [
+      "Mediterranean Classic",
+      "Silvery Sage Foliage",
+      "Drought Tolerant"
+    ],
+    "highlights": [
+      "Ancient symbol of peace and longevity",
+      "Can be grown in pots on sunlit patios and lofts",
+      "Tolerant of wind, dry air, and missed waterings"
+    ],
+    "care": {
+      "sunlight": "Full direct sunlight (6+ hours)",
+      "water": "Allow top 2-3 inches to dry between waterings",
+      "humidity": "Low to average household humidity",
+      "temperature": "55°F - 85°F",
+      "soil": "Sandy, rocky, alkaline, free-draining soil",
+      "fertilizer": "Balanced slow-release fertilizer in spring"
+    },
+    "careGuides": [
+      {
+        "type": "watering",
+        "description": "Water deeply then let soil dry thoroughly. Do not overwater in winter."
+      },
+      {
+        "type": "sunlight",
+        "description": "Position in the sunniest window or patio location available."
+      }
+    ],
+    "watering": "Minimum",
+    "sunlight": "Full sun",
+    "cycle": "Perennial",
+    "careLevel": "Easy",
+    "size": "Large",
+    "potSize": "10 inch",
+    "toxicity": "Non-toxic (Pet Friendly)",
+    "inStock": true,
+    "isPopular": true
+  }
+]

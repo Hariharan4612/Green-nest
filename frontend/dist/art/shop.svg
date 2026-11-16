@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Three potted plants lined up on a shelf">
+  <rect width="480" height="360" rx="28" fill="#eef3e7"/>
+  <circle cx="240" cy="148" r="112" fill="#dfe9cf"/>
+  <ellipse cx="240" cy="312" rx="172" ry="14" fill="#d8e2cc"/>
+  <g transform="translate(150 252)" fill="#55875a">
+    <path d="M0 -12V-78" stroke="#4f7a4c" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="-18" cy="-84" rx="16" ry="36" transform="rotate(-30 -18 -84)"/>
+    <ellipse cx="18" cy="-84" rx="16" ry="36" transform="rotate(30 18 -84)" fill="#6b9560"/>
+    <ellipse cx="0" cy="-100" rx="15" ry="38"/>
+    <path d="M-32 -14h64l-9 44h-46z" fill="#c9b59a" stroke="none"/>
+    <path d="M-34 -16q34 10 68 0v12q-34 10-68 0z" fill="#ad987d" stroke="none"/>
+  </g>
+  <g transform="translate(240 262)" fill="#4f8056">
+    <path d="M0 -12V-96" stroke="#456d4a" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="-24" cy="-96" rx="20" ry="46" transform="rotate(-32 -24 -96)"/>
+    <ellipse cx="24" cy="-96" rx="20" ry="46" transform="rotate(32 24 -96)" fill="#6b9560"/>
+    <ellipse cx="0" cy="-116" rx="19" ry="48"/>
+    <path d="M-38 -14h76l-11 52h-54z" fill="#c9b59a" stroke="none"/>
+    <path d="M-40 -16q40 12 80 0v12q-40 12-80 0z" fill="#ad987d" stroke="none"/>
+  </g>
+  <g transform="translate(330 252)" fill="#55875a">
+    <path d="M0 -12V-78" stroke="#4f7a4c" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="-18" cy="-84" rx="16" ry="36" transform="rotate(-30 -18 -84)"/>
+    <ellipse cx="18" cy="-84" rx="16" ry="36" transform="rotate(30 18 -84)" fill="#6b9560"/>
+    <ellipse cx="0" cy="-100" rx="15" ry="38"/>
+    <path d="M-32 -14h64l-9 44h-46z" fill="#c9b59a" stroke="none"/>
+    <path d="M-34 -16q34 10 68 0v12q-34 10-68 0z" fill="#ad987d" stroke="none"/>
+  </g>
+</svg>

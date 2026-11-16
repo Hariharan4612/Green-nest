@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="A delivery parcel with plants and a payment card">
+  <rect width="480" height="360" rx="28" fill="#eef3e7"/>
+  <circle cx="240" cy="164" r="118" fill="#dfe9cf"/>
+  <g fill="#55875a">
+    <ellipse cx="218" cy="126" rx="18" ry="42" transform="rotate(-28 218 126)"/>
+    <ellipse cx="248" cy="114" rx="17" ry="46"/>
+    <ellipse cx="278" cy="128" rx="18" ry="42" transform="rotate(28 278 128)" fill="#6b9560"/>
+  </g>
+  <path d="M146 182l94-44 94 44-94 44z" fill="#e0ccb2"/>
+  <path d="M146 182v82l94 44v-82z" fill="#c9b59a"/>
+  <path d="M334 182v82l-94 40v-82z" fill="#ad987d"/>
+  <path d="M240 138v82" stroke="#ad987d" stroke-width="4"/>
+  <path d="M216 160l24-11 24 11" stroke="#b99570" stroke-width="4" fill="none"/>
+  <g transform="rotate(-8 332 96)">
+    <rect x="286" y="64" width="112" height="68" rx="12" fill="#fbfcf8" stroke="#d7dfcf" stroke-width="2"/>
+    <rect x="300" y="78" width="40" height="26" rx="6" fill="#d7e8a0"/>
+    <rect x="300" y="114" width="72" height="6" rx="3" fill="#c3d3b8"/>
+  </g>
+</svg>
