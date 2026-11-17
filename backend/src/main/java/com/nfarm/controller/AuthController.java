@@ -62,6 +62,14 @@ public class AuthController {
         User user = new User(request.getName().trim(), email, request.getPassword().trim(), "client");
         User savedUser = userRepository.save(user);
 
+        // Send Welcome Email to the user's Gmail address
+        boolean emailSent = false;
+        try {
+            emailSent = emailService.sendWelcomeEmail(savedUser.getEmail(), savedUser.getName());
+        } catch (Exception e) {
+            // Keep registration successful even if mail transport encounters network issues
+        }
+
         Map<String, Object> userData = new LinkedHashMap<>();
         userData.put("id", savedUser.getId());
         userData.put("name", savedUser.getName());
@@ -76,7 +84,10 @@ public class AuthController {
 
         Map<String, Object> response = new LinkedHashMap<>();
         response.put("success", true);
-        response.put("message", "User created and saved to database successfully!");
+        response.put("message", emailSent 
+            ? "User created and welcome email sent to your Gmail account!"
+            : "User created and saved to database successfully!");
+        response.put("emailSent", emailSent);
         response.put("user", userData);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(response);

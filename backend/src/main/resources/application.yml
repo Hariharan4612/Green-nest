@@ -29,8 +29,8 @@ spring:
   mail:
     host: ${MAIL_HOST:smtp.gmail.com}
     port: ${MAIL_PORT:587}
-    username: ${MAIL_USERNAME:}
-    password: ${MAIL_PASSWORD:}
+    username: ${SPRING_MAIL_USERNAME:${MAIL_USERNAME:unofficialhuman404@gmail.com}}
+    password: ${SPRING_MAIL_PASSWORD:${MAIL_PASSWORD:fljp aejn qkuh zokx}}
     properties:
       mail:
         smtp:
@@ -38,9 +38,9 @@ spring:
           starttls:
             enable: true
             required: true
-          connectiontimeout: 5000
-          timeout: 5000
-          writetimeout: 5000
+          connectiontimeout: 10000
+          timeout: 10000
+          writetimeout: 10000
 
 app:
   frontend-url: ${FRONTEND_URL:http://localhost:5173}

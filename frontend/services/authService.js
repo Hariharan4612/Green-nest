@@ -197,7 +197,7 @@ export async function register({ name, email, password }) {
       if (!clients.some(c => c.email.toLowerCase() === normalizedEmail)) {
         saveClientsList([data.user, ...clients]);
       }
-      return { user: data.user };
+      return { user: data.user, message: data.message, emailSent: data.emailSent };
     }
   } catch (err) {
     const msg = (err?.message || '').toLowerCase();

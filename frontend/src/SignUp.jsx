@@ -66,7 +66,10 @@ export default function SignUp() {
       });
 
       setUser(res.user);
-      showToast(`🎉 Account created successfully! Welcome to GreenNest, ${res.user.name}.`, 'success');
+      const toastMsg = res.emailSent 
+        ? `🎉 Account created! A welcome email was sent to ${res.user.email}.`
+        : `🎉 Account created successfully! Welcome to GreenNest, ${res.user.name}.`;
+      showToast(toastMsg, 'success');
       navigate('/shop');
     } catch (err) {
       setErrorMessage(err.message || 'Failed to create user. Please try again.');
