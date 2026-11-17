@@ -45,6 +45,12 @@ public class User implements Serializable {
     @Column(name = "created_at")
     private String createdAt;
 
+    @Column(name = "reset_password_token", length = 100)
+    private String resetPasswordToken;
+
+    @Column(name = "reset_password_expiry")
+    private LocalDateTime resetPasswordExpiry;
+
     public User() {
         this.createdAt = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE);
     }
@@ -144,5 +150,21 @@ public class User implements Serializable {
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public String getResetPasswordToken() {
+        return resetPasswordToken;
+    }
+
+    public void setResetPasswordToken(String resetPasswordToken) {
+        this.resetPasswordToken = resetPasswordToken;
+    }
+
+    public LocalDateTime getResetPasswordExpiry() {
+        return resetPasswordExpiry;
+    }
+
+    public void setResetPasswordExpiry(LocalDateTime resetPasswordExpiry) {
+        this.resetPasswordExpiry = resetPasswordExpiry;
     }
 }

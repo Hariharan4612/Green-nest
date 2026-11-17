@@ -4,14 +4,18 @@ import com.nfarm.dto.LoginRequest;
 import com.nfarm.dto.RegisterRequest;
 import com.nfarm.model.User;
 import com.nfarm.repository.UserRepository;
+import com.nfarm.service.EmailService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -19,9 +23,14 @@ import java.util.Optional;
 public class AuthController {
 
     private final UserRepository userRepository;
+    private final EmailService emailService;
 
-    public AuthController(UserRepository userRepository) {
+    @Value("${app.frontend-url:http://localhost:5173}")
+    private String frontendUrl;
+
+    public AuthController(UserRepository userRepository, EmailService emailService) {
         this.userRepository = userRepository;
+        this.emailService = emailService;
     }
 
     /**
@@ -174,6 +183,118 @@ public class AuthController {
             "success", true,
             "count", clients.size(),
             "clients", clients
+        ));
+    }
+
+    /**
+     * Forgot Password:
+     * Generates a unique 30-minute reset token, saves it to the user, and sends
+     * a password reset email to the user's Gmail address.
+     */
+    @PostMapping("/forgot-password")
+    public ResponseEntity<?> forgotPassword(@RequestBody Map<String, String> body) {
+        String email = body.get("email");
+        if (email == null || email.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body(Map.of(
+                "success", false,
+                "message", "Email address is required."
+            ));
+        }
+
+        String normalizedEmail = email.trim().toLowerCase();
+        Optional<User> userOpt = userRepository.findByEmailIgnoreCase(normalizedEmail);
+        if (userOpt.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of(
+                "success", false,
+                "message", "No account registered with this email address. Please check or create an account."
+            ));
+        }
+
+        User user = userOpt.get();
+
+        // Generate secure random reset token (valid for 30 minutes)
+        String token = UUID.randomUUID().toString();
+        user.setResetPasswordToken(token);
+        user.setResetPasswordExpiry(LocalDateTime.now().plusMinutes(30));
+        userRepository.save(user);
+
+        // Build reset link
+        String baseUrl = (frontendUrl != null && !frontendUrl.isBlank()) ? frontendUrl.replaceAll("/+$", "") : "http://localhost:5173";
+        String resetLink = baseUrl + "/reset-password?token=" + token;
+
+        // Dispatch email via Gmail SMTP
+        boolean sentViaSmtp = false;
+        try {
+            sentViaSmtp = emailService.sendPasswordResetEmail(user.getEmail(), resetLink, user.getName());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of(
+                "success", false,
+                "message", "Failed to send email via SMTP: " + e.getMessage()
+            ));
+        }
+
+        Map<String, Object> resp = new LinkedHashMap<>();
+        resp.put("success", true);
+        resp.put("message", sentViaSmtp
+            ? "Password reset link sent successfully to " + user.getEmail() + "!"
+            : "Reset link generated. (SMTP credentials not yet configured; link logged to server console)");
+        resp.put("sentViaSmtp", sentViaSmtp);
+        resp.put("resetLink", resetLink);
+
+        return ResponseEntity.ok(resp);
+    }
+
+    /**
+     * Reset Password:
+     * Validates reset token and expiration, then updates user's password.
+     */
+    @PostMapping("/reset-password")
+    public ResponseEntity<?> resetPassword(@RequestBody Map<String, String> body) {
+        String token = body.get("token");
+        String newPassword = body.get("newPassword");
+        if (newPassword == null) {
+            newPassword = body.get("password");
+        }
+
+        if (token == null || token.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body(Map.of(
+                "success", false,
+                "message", "Reset token is required."
+            ));
+        }
+
+        if (newPassword == null || newPassword.trim().length() < 6) {
+            return ResponseEntity.badRequest().body(Map.of(
+                "success", false,
+                "message", "Password must be at least 6 characters long."
+            ));
+        }
+
+        Optional<User> userOpt = userRepository.findByResetPasswordToken(token.trim());
+        if (userOpt.isEmpty()) {
+            return ResponseEntity.badRequest().body(Map.of(
+                "success", false,
+                "message", "Invalid or already used password reset token."
+            ));
+        }
+
+        User user = userOpt.get();
+        if (user.getResetPasswordExpiry() == null || user.getResetPasswordExpiry().isBefore(LocalDateTime.now())) {
+            return ResponseEntity.badRequest().body(Map.of(
+                "success", false,
+                "message", "Password reset link has expired. Please request a new one."
+            ));
+        }
+
+        // Update password and invalidate token
+        user.setPassword(newPassword.trim());
+        user.setResetPasswordToken(null);
+        user.setResetPasswordExpiry(null);
+        userRepository.save(user);
+
+        return ResponseEntity.ok(Map.of(
+            "success", true,
+            "message", "Password has been successfully reset! You can now log in with your new password."
         ));
     }
 }

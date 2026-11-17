@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { LockIcon, EyeIcon, EyeOffIcon, RefreshIcon, CheckCircleIcon } from './Icons';
 import { validatePassword, getPasswordStrength } from './utils/validation';
+import { resetPassword } from '../services/authService';
 
 export default function ResetPassword() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const token = searchParams.get('token');
+
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState({});
+  const [apiError, setApiError] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -31,15 +36,26 @@ export default function ResetPassword() {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
+    if (!token) {
+      setApiError('Reset token is missing. Please click the link from your email or request a new one.');
+      return;
+    }
+
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setApiError('');
+
+    try {
+      await resetPassword(token, password);
       setIsSuccess(true);
-    }, 600);
+    } catch (err) {
+      setApiError(err.message || 'Failed to reset password. Your link may be expired.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -59,8 +75,24 @@ export default function ResetPassword() {
             Enter a new password for your GreenNest account.
           </p>
 
+          {!token && (
+            <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-800 text-xs text-left mb-6 space-y-2">
+              <p className="font-bold">⚠️ Missing Reset Token</p>
+              <p>No valid reset token was detected in the URL. Please click the reset link directly from your email, or request a new one.</p>
+              <Link to="/forgot-password" className="inline-block font-semibold text-emerald-800 underline">
+                Go to Forgot Password
+              </Link>
+            </div>
+          )}
+
           {!isSuccess ? (
             <form onSubmit={handleSubmit} noValidate className="space-y-4 text-left">
+              {apiError && (
+                <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-start gap-2">
+                  <span className="font-bold">⚠️</span>
+                  <span>{apiError}</span>
+                </div>
+              )}
               <div>
                 <label className="block text-xs font-semibold text-gray-700 mb-1.5">
                   New Password <span className="text-red-500">*</span>

@@ -2,15 +2,19 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { MailIcon, ArrowLeftIcon, CheckCircleIcon } from './Icons';
+import { MailIcon, ArrowLeftIcon, CheckCircleIcon, RefreshIcon } from './Icons';
 import { validateEmail } from './utils/validation';
+import { forgotPassword } from '../services/authService';
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+  const [apiError, setApiError] = useState('');
+  const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [successInfo, setSuccessInfo] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const err = validateEmail(email);
     if (err) {
@@ -18,7 +22,18 @@ export default function ForgotPassword() {
       return;
     }
     setError('');
-    setIsSubmitted(true);
+    setApiError('');
+    setLoading(true);
+
+    try {
+      const res = await forgotPassword(email);
+      setSuccessInfo(res);
+      setIsSubmitted(true);
+    } catch (err) {
+      setApiError(err.message || 'Failed to send reset email. Please verify your connection.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -42,6 +57,13 @@ export default function ForgotPassword() {
 
           {!isSubmitted ? (
             <form onSubmit={handleSubmit} noValidate className="space-y-4 text-left">
+              {apiError && (
+                <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-start gap-2">
+                  <span className="font-bold">⚠️</span>
+                  <span>{apiError}</span>
+                </div>
+              )}
+
               <div>
                 <label className="block text-xs font-semibold text-gray-700 mb-1.5">
                   Email Address <span className="text-red-500">*</span>
@@ -54,8 +76,10 @@ export default function ForgotPassword() {
                     onChange={(e) => {
                       setEmail(e.target.value);
                       if (error) setError('');
+                      if (apiError) setApiError('');
                     }}
-                    placeholder="Enter your email"
+                    placeholder="Enter your email (e.g. yourname@gmail.com)"
+                    disabled={loading}
                     className={`w-full pl-10 pr-4 py-2.5 rounded-xl border text-sm focus:outline-none transition-colors ${
                       error
                         ? 'border-red-400 bg-red-50/20 focus:ring-2 focus:ring-red-400'
@@ -70,20 +94,47 @@ export default function ForgotPassword() {
 
               <button
                 type="submit"
-                className="w-full bg-[#1e4d2b] hover:bg-[#163b21] active:scale-[0.98] text-white py-3 rounded-xl font-semibold text-xs tracking-wider uppercase transition-all shadow-md shadow-emerald-900/10 mt-2 cursor-pointer"
+                disabled={loading}
+                className="w-full bg-[#1e4d2b] hover:bg-[#163b21] disabled:opacity-60 active:scale-[0.98] text-white py-3 rounded-xl font-semibold text-xs tracking-wider uppercase transition-all shadow-md shadow-emerald-900/10 mt-2 cursor-pointer flex items-center justify-center gap-2"
               >
-                Send Reset Link
+                {loading ? (
+                  <>
+                    <RefreshIcon className="w-4 h-4 animate-spin" />
+                    Sending Reset Link...
+                  </>
+                ) : (
+                  'Send Reset Link'
+                )}
               </button>
             </form>
           ) : (
-            <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 mb-6 text-center space-y-2">
+            <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 mb-6 text-center space-y-3">
               <div className="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center mx-auto">
                 <CheckCircleIcon className="w-6 h-6" />
               </div>
               <h4 className="font-bold text-[#142e1b] text-sm">Reset link dispatched!</h4>
-              <p className="text-xs text-gray-600">
-                We've sent password reset instructions to <strong>{email}</strong>. Please check your inbox and spam folder.
+              <p className="text-xs text-gray-600 leading-relaxed">
+                We've sent password reset instructions to <strong>{email}</strong>. Please check your Gmail inbox and spam folder.
               </p>
+              {successInfo?.resetLink && !successInfo?.sentViaSmtp && (
+                <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-xl text-left text-[11px] text-amber-800 space-y-1">
+                  <p className="font-semibold">💡 Development Notice:</p>
+                  <p>Gmail credentials are not configured in backend yet, but the token was generated! You can test immediately using this link:</p>
+                  <a href={successInfo.resetLink} className="block text-emerald-800 underline font-mono break-all mt-1">
+                    {successInfo.resetLink}
+                  </a>
+                </div>
+              )}
+              <button
+                type="button"
+                onClick={() => {
+                  setIsSubmitted(false);
+                  setSuccessInfo(null);
+                }}
+                className="text-xs font-semibold text-[#1e4d2b] hover:underline pt-2 block mx-auto cursor-pointer"
+              >
+                ← Send to another email
+              </button>
             </div>
           )}
 
