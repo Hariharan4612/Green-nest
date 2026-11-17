@@ -1,5 +1,9 @@
 server:
   port: 4000
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: true
 
 spring:
   application:
@@ -27,10 +31,10 @@ spring:
       indent-output: false
 
   mail:
-    host: ${MAIL_HOST:smtp.gmail.com}
-    port: ${MAIL_PORT:587}
-    username: ${SPRING_MAIL_USERNAME:${MAIL_USERNAME:unofficialhuman404@gmail.com}}
-    password: ${SPRING_MAIL_PASSWORD:${MAIL_PASSWORD:fljp aejn qkuh zokx}}
+    host: smtp.gmail.com
+    port: 587
+    username: ${SPRING_MAIL_USERNAME:unofficialhuman404@gmail.com}
+    password: ${SPRING_MAIL_PASSWORD:fljpaejnqkuhzokx}
     properties:
       mail:
         smtp:
@@ -38,9 +42,9 @@ spring:
           starttls:
             enable: true
             required: true
-          connectiontimeout: 10000
-          timeout: 10000
-          writetimeout: 10000
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
 
 app:
   frontend-url: ${FRONTEND_URL:http://localhost:5173}

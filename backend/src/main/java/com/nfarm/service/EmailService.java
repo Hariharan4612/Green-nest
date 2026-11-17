@@ -18,7 +18,7 @@ public class EmailService {
     @Autowired(required = false)
     private JavaMailSender mailSender;
 
-    @Value("${spring.mail.username:}")
+    @Value("${spring.mail.username:unofficialhuman404@gmail.com}")
     private String fromEmail;
 
     @Value("${app.frontend-url:http://localhost:5173}")
@@ -51,7 +51,7 @@ public class EmailService {
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
 
-            helper.setFrom(fromEmail);
+            helper.setFrom(fromEmail, "Green-nest admin");
             helper.setTo(toEmail);
             helper.setSubject("🌱 Reset Your GreenNest Account Password");
 
@@ -61,12 +61,9 @@ public class EmailService {
             mailSender.send(mimeMessage);
             logger.info("Password reset email successfully sent to {}", toEmail);
             return true;
-        } catch (MessagingException e) {
-            logger.error("Failed to construct or send reset email to {}: {}", toEmail, e.getMessage(), e);
-            throw new RuntimeException("Could not send email. Please verify SMTP host and credentials.", e);
         } catch (Exception e) {
             logger.error("Error dispatching password reset email to {}: {}", toEmail, e.getMessage(), e);
-            throw new RuntimeException("Email delivery failed: " + e.getMessage(), e);
+            throw new RuntimeException(e.getMessage() != null ? e.getMessage() : e.getClass().getSimpleName(), e);
         }
     }
 
@@ -169,7 +166,7 @@ public class EmailService {
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
 
-            helper.setFrom(fromEmail);
+            helper.setFrom(fromEmail, "Green-nest admin");
             helper.setTo(toEmail);
             helper.setSubject("🌿 Welcome to GreenNest, " + displayName + "! Your Green Haven Awaits");
 

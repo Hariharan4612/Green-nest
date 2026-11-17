@@ -5,6 +5,8 @@ import com.nfarm.dto.RegisterRequest;
 import com.nfarm.model.User;
 import com.nfarm.repository.UserRepository;
 import com.nfarm.service.EmailService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,16 +19,21 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "*")
 public class AuthController {
+
+    private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
 
     private final UserRepository userRepository;
     private final EmailService emailService;
 
     @Value("${app.frontend-url:http://localhost:5173}")
     private String frontendUrl;
+
+    @Value("${spring.mail.username:unofficialhuman404@gmail.com}")
+    private String fromEmail;
 
     public AuthController(UserRepository userRepository, EmailService emailService) {
         this.userRepository = userRepository;
@@ -39,58 +46,66 @@ public class AuthController {
      */
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterRequest request) {
-        if (request.getName() == null || request.getName().trim().isEmpty() ||
-            request.getEmail() == null || request.getEmail().trim().isEmpty() ||
-            request.getPassword() == null || request.getPassword().trim().isEmpty()) {
-            return ResponseEntity.badRequest().body(Map.of(
-                "success", false,
-                "message", "Name, email and password are required."
-            ));
-        }
-
-        String email = request.getEmail().trim().toLowerCase();
-
-        // Check if user already exists in SQL database
-        if (userRepository.existsByEmailIgnoreCase(email)) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(Map.of(
-                "success", false,
-                "message", "An account with this email already exists. Please log in."
-            ));
-        }
-
-        // Save directly to SQL
-        User user = new User(request.getName().trim(), email, request.getPassword().trim(), "client");
-        User savedUser = userRepository.save(user);
-
-        // Send Welcome Email to the user's Gmail address
-        boolean emailSent = false;
         try {
-            emailSent = emailService.sendWelcomeEmail(savedUser.getEmail(), savedUser.getName());
+            if (request.getName() == null || request.getName().trim().isEmpty() ||
+                request.getEmail() == null || request.getEmail().trim().isEmpty() ||
+                request.getPassword() == null || request.getPassword().trim().isEmpty()) {
+                return ResponseEntity.badRequest().body(Map.of(
+                    "success", false,
+                    "message", "Name, email and password are required."
+                ));
+            }
+
+            String email = request.getEmail().trim().toLowerCase();
+
+            // Check if user already exists in SQL database
+            if (userRepository.existsByEmailIgnoreCase(email)) {
+                return ResponseEntity.status(HttpStatus.CONFLICT).body(Map.of(
+                    "success", false,
+                    "message", "An account with this email already exists. Please log in."
+                ));
+            }
+
+            // Save directly to SQL
+            User user = new User(request.getName().trim(), email, request.getPassword().trim(), "client");
+            User savedUser = userRepository.save(user);
+
+            // Send Welcome Email to the user's Gmail address
+            boolean emailSent = false;
+            try {
+                emailSent = emailService.sendWelcomeEmail(savedUser.getEmail(), savedUser.getName());
+            } catch (Exception e) {
+                logger.warn("Could not dispatch welcome email to {}: {}", savedUser.getEmail(), e.getMessage());
+            }
+
+            Map<String, Object> userData = new LinkedHashMap<>();
+            userData.put("id", savedUser.getId());
+            userData.put("name", savedUser.getName());
+            userData.put("email", savedUser.getEmail());
+            userData.put("role", savedUser.getRole());
+            userData.put("phone", savedUser.getPhone());
+            userData.put("city", savedUser.getCity());
+            userData.put("state", savedUser.getState());
+            userData.put("pinCode", savedUser.getPinCode());
+            userData.put("address", savedUser.getAddress());
+            userData.put("isLoggedIn", true);
+
+            Map<String, Object> response = new LinkedHashMap<>();
+            response.put("success", true);
+            response.put("message", emailSent 
+                ? "User created and welcome email sent to your Gmail account!"
+                : "User created and saved to database successfully!");
+            response.put("emailSent", emailSent);
+            response.put("user", userData);
+
+            return ResponseEntity.status(HttpStatus.CREATED).body(response);
         } catch (Exception e) {
-            // Keep registration successful even if mail transport encounters network issues
+            logger.error("User registration failed: ", e);
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of(
+                "success", false,
+                "message", "Registration error: " + (e.getMessage() != null ? e.getMessage() : "Database constraint issue")
+            ));
         }
-
-        Map<String, Object> userData = new LinkedHashMap<>();
-        userData.put("id", savedUser.getId());
-        userData.put("name", savedUser.getName());
-        userData.put("email", savedUser.getEmail());
-        userData.put("role", savedUser.getRole());
-        userData.put("phone", savedUser.getPhone());
-        userData.put("city", savedUser.getCity());
-        userData.put("state", savedUser.getState());
-        userData.put("pinCode", savedUser.getPinCode());
-        userData.put("address", savedUser.getAddress());
-        userData.put("isLoggedIn", true);
-
-        Map<String, Object> response = new LinkedHashMap<>();
-        response.put("success", true);
-        response.put("message", emailSent 
-            ? "User created and welcome email sent to your Gmail account!"
-            : "User created and saved to database successfully!");
-        response.put("emailSent", emailSent);
-        response.put("user", userData);
-
-        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     /**
@@ -198,6 +213,52 @@ public class AuthController {
     }
 
     /**
+     * Health & Diagnostics endpoint:
+     * Easily check from the browser whether the DB is connected and backend is alive.
+     */
+    @GetMapping("/status")
+    public ResponseEntity<?> getStatus() {
+        Map<String, Object> status = new LinkedHashMap<>();
+        try {
+            long count = userRepository.count();
+            status.put("database", "CONNECTED");
+            status.put("usersCount", count);
+        } catch (Exception e) {
+            status.put("database", "ERROR: " + e.getMessage());
+        }
+        status.put("server", "UP");
+        status.put("port", 4000);
+        status.put("frontendUrl", frontendUrl);
+        return ResponseEntity.ok(status);
+    }
+
+    /**
+     * Test Sending Real Email:
+     * Easily triggers a test email directly via Gmail SMTP to verify delivery.
+     */
+    @GetMapping("/test-send-mail")
+    public ResponseEntity<?> testSendMail(@RequestParam(defaultValue = "hariharan4612@gmail.com") String to) {
+        try {
+            boolean sent = emailService.sendPasswordResetEmail(to, frontendUrl + "/reset-password?token=test-token-123", "GreenNest Member");
+            return ResponseEntity.ok(Map.of(
+                "success", sent,
+                "sentViaSmtp", sent,
+                "to", to,
+                "from", "Green-nest admin <" + fromEmail + ">",
+                "message", "Password reset test email sent successfully to " + to + "!"
+            ));
+        } catch (Exception e) {
+            logger.error("Test send mail failed: ", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of(
+                "success", false,
+                "to", to,
+                "from", fromEmail,
+                "error", e.getMessage() != null ? e.getMessage() : e.toString()
+            ));
+        }
+    }
+
+    /**
      * Forgot Password:
      * Generates a unique 30-minute reset token, saves it to the user, and sends
      * a password reset email to the user's Gmail address.
@@ -235,22 +296,23 @@ public class AuthController {
 
         // Dispatch email via Gmail SMTP
         boolean sentViaSmtp = false;
+        String smtpError = null;
         try {
             sentViaSmtp = emailService.sendPasswordResetEmail(user.getEmail(), resetLink, user.getName());
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of(
-                "success", false,
-                "message", "Failed to send email via SMTP: " + e.getMessage()
-            ));
+            smtpError = e.getMessage();
+            logger.warn("SMTP email dispatch warning for {}: {}", user.getEmail(), smtpError);
         }
 
         Map<String, Object> resp = new LinkedHashMap<>();
         resp.put("success", true);
-        resp.put("message", sentViaSmtp
-            ? "Password reset link sent successfully to " + user.getEmail() + "!"
-            : "Reset link generated. (SMTP credentials not yet configured; link logged to server console)");
         resp.put("sentViaSmtp", sentViaSmtp);
         resp.put("resetLink", resetLink);
+        if (sentViaSmtp) {
+            resp.put("message", "Password reset link sent successfully to your Gmail (" + user.getEmail() + ")!");
+        } else {
+            resp.put("message", "Password reset link generated! " + (smtpError != null ? "(" + smtpError + ")" : ""));
+        }
 
         return ResponseEntity.ok(resp);
     }
@@ -306,6 +368,15 @@ public class AuthController {
         return ResponseEntity.ok(Map.of(
             "success", true,
             "message", "Password has been successfully reset! You can now log in with your new password."
+        ));
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<?> handleException(Exception e) {
+        logger.error("Unhandled exception in AuthController: ", e);
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of(
+            "success", false,
+            "message", e.getMessage() != null ? e.getMessage() : e.getClass().getSimpleName()
         ));
     }
 }

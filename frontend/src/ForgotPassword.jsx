@@ -13,6 +13,7 @@ export default function ForgotPassword() {
   const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [successInfo, setSuccessInfo] = useState(null);
+  const [copied, setCopied] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -112,19 +113,56 @@ export default function ForgotPassword() {
               <div className="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center mx-auto">
                 <CheckCircleIcon className="w-6 h-6" />
               </div>
-              <h4 className="font-bold text-[#142e1b] text-sm">Reset link dispatched!</h4>
+              <h4 className="font-bold text-[#142e1b] text-sm">
+                {successInfo?.sentViaSmtp ? 'Reset email dispatched!' : 'Reset link generated!'}
+              </h4>
               <p className="text-xs text-gray-600 leading-relaxed">
-                We've sent password reset instructions to <strong>{email}</strong>. Please check your Gmail inbox and spam folder.
+                {successInfo?.sentViaSmtp ? (
+                  <>We've dispatched password reset instructions to <strong>{email}</strong>. Please check your Gmail inbox and spam folder.</>
+                ) : (
+                  <>Password reset link is ready for <strong>{email}</strong>.</>
+                )}
               </p>
-              {successInfo?.resetLink && !successInfo?.sentViaSmtp && (
-                <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-xl text-left text-[11px] text-amber-800 space-y-1">
-                  <p className="font-semibold">💡 Development Notice:</p>
-                  <p>Gmail credentials are not configured in backend yet, but the token was generated! You can test immediately using this link:</p>
-                  <a href={successInfo.resetLink} className="block text-emerald-800 underline font-mono break-all mt-1">
+
+              {successInfo?.resetLink && (
+                <div className="mt-3 p-3.5 bg-white border border-emerald-200 rounded-xl text-left text-[11px] text-gray-700 space-y-2 shadow-xs">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-[#142e1b] flex items-center gap-1">
+                      <span>🔑</span> Reset Password Link
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (navigator.clipboard && successInfo.resetLink) {
+                          navigator.clipboard.writeText(successInfo.resetLink);
+                          setCopied(true);
+                          setTimeout(() => setCopied(false), 2000);
+                        }
+                      }}
+                      className="text-[11px] text-[#1e4d2b] hover:underline font-semibold cursor-pointer"
+                    >
+                      {copied ? '✓ Copied!' : 'Copy Link'}
+                    </button>
+                  </div>
+
+                  <Link
+                    to={
+                      successInfo.resetLink.startsWith('http')
+                        ? new URL(successInfo.resetLink).pathname + new URL(successInfo.resetLink).search
+                        : successInfo.resetLink
+                    }
+                    className="w-full bg-[#1e4d2b] hover:bg-[#163b21] active:scale-[0.98] text-white py-2.5 rounded-xl font-semibold text-xs tracking-wider uppercase transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer mt-1"
+                  >
+                    <span>Proceed to Reset Password</span>
+                    <span>→</span>
+                  </Link>
+
+                  <p className="text-[10px] text-gray-400 font-mono break-all pt-1 select-all">
                     {successInfo.resetLink}
-                  </a>
+                  </p>
                 </div>
               )}
+
               <button
                 type="button"
                 onClick={() => {

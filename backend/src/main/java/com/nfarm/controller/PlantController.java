@@ -12,9 +12,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/plants")
-@CrossOrigin(origins = "*")
 public class PlantController {
 
     private final PlantService plantService;

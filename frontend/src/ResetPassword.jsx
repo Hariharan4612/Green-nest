@@ -10,6 +10,7 @@ export default function ResetPassword() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const token = searchParams.get('token');
+  const emailParam = searchParams.get('email');
 
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -49,7 +50,7 @@ export default function ResetPassword() {
     setApiError('');
 
     try {
-      await resetPassword(token, password);
+      await resetPassword(token, password, emailParam);
       setIsSuccess(true);
     } catch (err) {
       setApiError(err.message || 'Failed to reset password. Your link may be expired.');

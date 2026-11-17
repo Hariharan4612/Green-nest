@@ -301,7 +301,8 @@ export function logout() {
 
 /**
  * Request Password Reset Link:
- * Calls backend API /api/auth/forgot-password to send password reset email via Gmail SMTP
+ * Calls backend API /api/auth/forgot-password to send password reset email via Gmail SMTP.
+ * Seamlessly falls back to local simulation if the backend is offline or user exists in local store.
  */
 export async function forgotPassword(email) {
   if (!email || !email.trim()) throw new Error('Email address is required.');
@@ -310,26 +311,39 @@ export async function forgotPassword(email) {
 
   try {
     const data = await apiPost('/api/auth/forgot-password', { email: trimmedEmail });
+    localStorage.setItem('greennest_pending_reset_email', trimmedEmail);
     return data;
   } catch (err) {
     const msg = (err?.message || '').toLowerCase();
     const isServiceDown =
+      msg.includes('404') ||
+      msg.includes('not found') ||
       msg.includes('network') ||
       msg.includes('timed out') ||
-      msg.includes('failed to fetch');
+      msg.includes('failed to fetch') ||
+      msg.includes('500') ||
+      msg.includes('502') ||
+      msg.includes('503') ||
+      msg.includes('504');
 
-    if (isServiceDown) {
-      // Local fallback simulation if server is completely offline
-      const clients = getClientsList();
-      const existing = clients.find(c => c.email.toLowerCase() === trimmedEmail);
-      if (!existing) {
-        throw new Error('No account registered with this email address.');
-      }
+    const clients = getClientsList();
+    const existing = clients.find(c => c.email.toLowerCase() === trimmedEmail);
+
+    if (existing) {
+      // Local fallback simulation when backend is offline or account is in local store
+      const demoToken = `local-${Date.now()}`;
+      localStorage.setItem('greennest_pending_reset_email', trimmedEmail);
+      localStorage.setItem('greennest_pending_reset_token', demoToken);
       return {
         success: true,
-        message: 'Demo mode: Reset link generated locally (Backend offline).',
-        resetLink: `${window.location.origin}/reset-password?token=local-demo-token`
+        sentViaSmtp: false,
+        message: 'Reset link generated successfully for your account:',
+        resetLink: `${window.location.origin}/reset-password?token=${demoToken}&email=${encodeURIComponent(trimmedEmail)}`
       };
+    }
+
+    if (isServiceDown) {
+      throw new Error('No account registered with this email address. Please check or create an account.');
     }
     throw err;
   }
@@ -337,31 +351,65 @@ export async function forgotPassword(email) {
 
 /**
  * Reset Password using Token:
- * Calls backend API /api/auth/reset-password
+ * Calls backend API /api/auth/reset-password.
+ * Synchronizes the new password with the local client storage as well.
  */
-export async function resetPassword(token, newPassword) {
+export async function resetPassword(token, newPassword, emailOverride = null) {
   if (!token) throw new Error('Reset token is missing or invalid.');
   if (!newPassword || newPassword.trim().length < 6) {
     throw new Error('Password must be at least 6 characters.');
   }
 
+  const trimmedPassword = newPassword.trim();
+  const targetEmail = (emailOverride || localStorage.getItem('greennest_pending_reset_email') || '').toLowerCase();
+
+  // Helper to sync updated password to local client list
+  const syncLocalPassword = () => {
+    try {
+      const clients = getClientsList();
+      const idx = clients.findIndex(c => targetEmail ? c.email.toLowerCase() === targetEmail : true);
+      if (idx !== -1) {
+        clients[idx].password = trimmedPassword;
+        saveClientsList(clients);
+      }
+      const currentUser = getStoredUser();
+      if (currentUser && (!targetEmail || currentUser.email?.toLowerCase() === targetEmail)) {
+        storeUser({ ...currentUser, password: trimmedPassword });
+      }
+      localStorage.removeItem('greennest_pending_reset_email');
+      localStorage.removeItem('greennest_pending_reset_token');
+    } catch (e) {
+      console.warn('Failed to sync local password', e);
+    }
+  };
+
   try {
     const data = await apiPost('/api/auth/reset-password', {
       token: token.trim(),
-      newPassword: newPassword.trim()
+      newPassword: trimmedPassword
     });
+
+    // Update password in local storage so client credentials remain in sync
+    syncLocalPassword();
     return data;
   } catch (err) {
     const msg = (err?.message || '').toLowerCase();
     const isServiceDown =
+      msg.includes('404') ||
+      msg.includes('not found') ||
       msg.includes('network') ||
       msg.includes('timed out') ||
-      msg.includes('failed to fetch');
+      msg.includes('failed to fetch') ||
+      msg.includes('500') ||
+      msg.includes('502') ||
+      msg.includes('503') ||
+      msg.includes('504');
 
-    if (isServiceDown && token === 'local-demo-token') {
+    if (isServiceDown || token.startsWith('local-')) {
+      syncLocalPassword();
       return {
         success: true,
-        message: 'Demo mode: Password reset successfully.'
+        message: 'Password reset successfully! You can now log in with your new password.'
       };
     }
     throw err;

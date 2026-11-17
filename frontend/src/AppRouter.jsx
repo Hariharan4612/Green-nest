@@ -27,6 +27,8 @@ import FAQ from './FAQ.jsx';
 import AiPlantScannerPage from './AiPlantScannerPage.jsx';
 import PrivacyPolicy from './PrivacyPolicy.jsx';
 import TermsAndConditions from './TermsAndConditions.jsx';
+import ResetPassword from './ResetPassword.jsx';
+import ChangePassword from './ChangePassword.jsx';
 import NotFound from './NotFound.jsx';
 
 export default function AppRouter() {
@@ -49,6 +51,8 @@ export default function AppRouter() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/change-password" element={<ChangePassword />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/wishlist" element={<Wishlist />} />
