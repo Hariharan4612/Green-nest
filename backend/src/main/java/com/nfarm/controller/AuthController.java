@@ -290,9 +290,10 @@ public class AuthController {
         user.setResetPasswordExpiry(LocalDateTime.now().plusMinutes(30));
         userRepository.save(user);
 
-        // Build reset link
+        // Build reset link with token and email for seamless frontend synchronization
         String baseUrl = (frontendUrl != null && !frontendUrl.isBlank()) ? frontendUrl.replaceAll("/+$", "") : "http://localhost:5173";
-        String resetLink = baseUrl + "/reset-password?token=" + token;
+        String encodedEmail = java.net.URLEncoder.encode(user.getEmail(), java.nio.charset.StandardCharsets.UTF_8);
+        String resetLink = baseUrl + "/reset-password?token=" + token + "&email=" + encodedEmail;
 
         // Dispatch email via Gmail SMTP
         boolean sentViaSmtp = false;
@@ -344,6 +345,15 @@ public class AuthController {
         }
 
         Optional<User> userOpt = userRepository.findByResetPasswordToken(token.trim());
+        if (userOpt.isEmpty()) {
+            String email = body.get("email");
+            if (email != null && !email.trim().isEmpty()) {
+                Optional<User> byEmail = userRepository.findByEmailIgnoreCase(email.trim());
+                if (byEmail.isPresent() && token.trim().equals(byEmail.get().getResetPasswordToken())) {
+                    userOpt = byEmail;
+                }
+            }
+        }
         if (userOpt.isEmpty()) {
             return ResponseEntity.badRequest().body(Map.of(
                 "success", false,

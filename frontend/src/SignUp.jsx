@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -17,7 +17,7 @@ import { validateEmail, validateName, validatePassword, getPasswordStrength } fr
 
 export default function SignUp() {
   const navigate = useNavigate();
-  const { setUser, showToast } = useApp();
+  const { user, setUser, showToast } = useApp();
 
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -27,6 +27,13 @@ export default function SignUp() {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [errors, setErrors] = useState({});
+
+  // Redirect if already logged in
+  useEffect(() => {
+    if (user && user.isLoggedIn) {
+      navigate('/', { replace: true });
+    }
+  }, [user, navigate]);
 
   const passwordStrength = getPasswordStrength(password);
 
@@ -70,7 +77,7 @@ export default function SignUp() {
         ? `🎉 Account created! A welcome email was sent to ${res.user.email}.`
         : `🎉 Account created successfully! Welcome to GreenNest, ${res.user.name}.`;
       showToast(toastMsg, 'success');
-      navigate('/shop');
+      navigate('/');
     } catch (err) {
       setErrorMessage(err.message || 'Failed to create user. Please try again.');
       showToast(err.message, 'error');

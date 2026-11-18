@@ -312,6 +312,11 @@ export async function forgotPassword(email) {
   try {
     const data = await apiPost('/api/auth/forgot-password', { email: trimmedEmail });
     localStorage.setItem('greennest_pending_reset_email', trimmedEmail);
+    // Ensure resetLink includes email parameter for seamless sync
+    if (data?.resetLink && !data.resetLink.includes('email=')) {
+      const sep = data.resetLink.includes('?') ? '&' : '?';
+      data.resetLink = `${data.resetLink}${sep}email=${encodeURIComponent(trimmedEmail)}`;
+    }
     return data;
   } catch (err) {
     const msg = (err?.message || '').toLowerCase();
@@ -361,16 +366,34 @@ export async function resetPassword(token, newPassword, emailOverride = null) {
   }
 
   const trimmedPassword = newPassword.trim();
-  const targetEmail = (emailOverride || localStorage.getItem('greennest_pending_reset_email') || '').toLowerCase();
+  const rawEmail = emailOverride || localStorage.getItem('greennest_pending_reset_email') || '';
+  const targetEmail = rawEmail.trim().toLowerCase();
 
   // Helper to sync updated password to local client list
   const syncLocalPassword = () => {
     try {
-      const clients = getClientsList();
-      const idx = clients.findIndex(c => targetEmail ? c.email.toLowerCase() === targetEmail : true);
-      if (idx !== -1) {
-        clients[idx].password = trimmedPassword;
-        saveClientsList(clients);
+      if (targetEmail) {
+        const clients = getClientsList();
+        const idx = clients.findIndex(c => c.email && c.email.toLowerCase() === targetEmail);
+        if (idx !== -1) {
+          clients[idx].password = trimmedPassword;
+          saveClientsList(clients);
+        } else {
+          // If the account was not yet in local clients list, add it so user can log in
+          const newClient = {
+            id: `client_${Date.now()}`,
+            name: targetEmail.split('@')[0],
+            email: targetEmail,
+            password: trimmedPassword,
+            role: 'client',
+            ordersCount: 0,
+            totalSpent: 0,
+            joinedDate: new Date().toISOString().split('T')[0],
+            city: '',
+            isLoggedIn: false
+          };
+          saveClientsList([newClient, ...clients]);
+        }
       }
       const currentUser = getStoredUser();
       if (currentUser && (!targetEmail || currentUser.email?.toLowerCase() === targetEmail)) {
@@ -386,7 +409,8 @@ export async function resetPassword(token, newPassword, emailOverride = null) {
   try {
     const data = await apiPost('/api/auth/reset-password', {
       token: token.trim(),
-      newPassword: trimmedPassword
+      newPassword: trimmedPassword,
+      email: targetEmail
     });
 
     // Update password in local storage so client credentials remain in sync

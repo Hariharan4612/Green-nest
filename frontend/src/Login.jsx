@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { useApp } from './context/AppContext';
@@ -9,6 +9,7 @@ import { validateEmail, validateRequired } from './utils/validation';
 
 export default function Login() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { user, setUser, showToast } = useApp();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -16,6 +17,13 @@ export default function Login() {
   const [rememberMe, setRememberMe] = useState(true);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
+
+  // Redirect if already logged in
+  useEffect(() => {
+    if (user && user.isLoggedIn) {
+      navigate('/', { replace: true });
+    }
+  }, [user, navigate]);
 
   const validateForm = () => {
     const errs = {};
@@ -38,7 +46,8 @@ export default function Login() {
       const res = await login({ email: email.trim(), password });
       setUser(res.user);
       showToast(`Welcome back, ${res.user.name}!`, 'success');
-      navigate('/shop');
+      const destination = location.state?.from?.pathname || '/';
+      navigate(destination, { replace: true });
     } catch (err) {
       showToast(err.message, 'error');
     } finally {

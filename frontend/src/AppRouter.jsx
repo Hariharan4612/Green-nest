@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FloatingScreenSwitcher from './components/FloatingScreenSwitcher.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import ProtectedRoute, { PublicOnlyRoute } from './components/ProtectedRoute.jsx';
 
 // 13 Core Screens from the mockup
 import HomePage from './HomePage.jsx'; // 01
@@ -41,30 +42,32 @@ export default function AppRouter() {
       <FloatingScreenSwitcher />
 
       <Routes>
-        {/* All 13 screens matching mockup image */}
-        <Route path="/" element={<HomePage />} />
-        <Route path="/shop" element={<PlantShop />} />
-        <Route path="/plants/:plantId" element={<ProductDetails />} />
-        <Route path="/cart" element={<ShoppingCart />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/payment-success" element={<PaymentSuccess />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        {/* Public authentication and password management routes */}
+        <Route path="/login" element={<PublicOnlyRoute><Login /></PublicOnlyRoute>} />
+        <Route path="/signup" element={<PublicOnlyRoute><SignUp /></PublicOnlyRoute>} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/change-password" element={<ChangePassword />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/search" element={<SearchResults />} />
+
+        {/* Protected screens: Must login or create account first, then enter Home Page */}
+        <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+        <Route path="/shop" element={<ProtectedRoute><PlantShop /></ProtectedRoute>} />
+        <Route path="/plants/:plantId" element={<ProtectedRoute><ProductDetails /></ProtectedRoute>} />
+        <Route path="/cart" element={<ProtectedRoute><ShoppingCart /></ProtectedRoute>} />
+        <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
+        <Route path="/payment-success" element={<ProtectedRoute><PaymentSuccess /></ProtectedRoute>} />
+        <Route path="/about" element={<ProtectedRoute><AboutUs /></ProtectedRoute>} />
+        <Route path="/contact" element={<ProtectedRoute><ContactUs /></ProtectedRoute>} />
+        <Route path="/wishlist" element={<ProtectedRoute><Wishlist /></ProtectedRoute>} />
+        <Route path="/search" element={<ProtectedRoute><SearchResults /></ProtectedRoute>} />
 
         {/* Visual overview board of all 13 screens */}
         <Route path="/screens" element={<AllScreensBoard />} />
 
         {/* Auxiliary user routes */}
-        <Route path="/scan" element={<AiPlantScannerPage />} />
-        <Route path="/account" element={<MyAccount />} />
-        <Route path="/faq" element={<FAQ />} />
+        <Route path="/scan" element={<ProtectedRoute><AiPlantScannerPage /></ProtectedRoute>} />
+        <Route path="/account" element={<ProtectedRoute><MyAccount /></ProtectedRoute>} />
+        <Route path="/faq" element={<ProtectedRoute><FAQ /></ProtectedRoute>} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="*" element={<NotFound />} />
